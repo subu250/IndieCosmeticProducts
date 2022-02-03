@@ -32,7 +32,6 @@
 ### Buy Product
 1. available only to logged in users
 1. User enters product  details
-1. Details are sent to Buy Trail  servlet
 1. Servlet creates product  object
 1. Servlet sends object to dao
 1. Dao adds product to the database
