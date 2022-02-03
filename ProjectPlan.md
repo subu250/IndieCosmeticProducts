@@ -12,3 +12,8 @@
 - [x]  Complete Problem Statement
 - [x]  Determine possible Web Services or APIs to use
 - [x]  List technologies, versions and how they will be used
+
+## Week 3
+
+- [x] Research ideas of product design.
+- [x]  Start working on project.
