@@ -61,15 +61,15 @@ Unit Testing
 
 **Design**
 
-* [User Stories](https://github.com/subu250/IndieCosmeticProducts/DesignDocuments/userStories.md)
+* [User Stories](DesignDocuments/userStories.md)
 
-* [Screen Design](https://github.com/subu250/IndieCosmeticProducts/ProjectPlan.md)
+* [Project Plan](DesignDocuments/ProjectPlan.md)
 
-* [Tasks](https://github.com/subu250/IndieCosmeticProducts/tasks.md)
+* [Tasks](DesignDocuments/tasks.md)
 
-* [Application Flow](https://github.com/subu250/IndieCosmeticProducts/applicationFlow.md)
+* [Application Flow](DesignDocuments/applicationFlow.md)
 
-* [Project Plan](https://github.com/subu250/IndieCosmeticProducts/screens.md)
+* [Project Plan](DesignDocuments/screens.md)
 
 
 
