@@ -1,30 +1,30 @@
 User Stories
 
-Sign Up
+### Sign Up
 
 As a new user, Sign up for a new account. *
 
-Sign In
+### Sign In
 
 User can sign in an created account. *
 
-Edit Profile
+### Edit Profile
 
 Sign-in user, can edit profile info.
 
-Buy New Product
+### Buy New Product
 
 Signed - in user can buy new product. *
 
-View Products
+### View Products
 
 Signed - in user, User can view products. *
 
-Product Info
+### Product Info
 
 Signed - in user can view products information.
 
-Search for Products
+### Search for Products
 
 Signed-in user can can search for a products.
 

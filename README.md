@@ -9,7 +9,7 @@ Our mission at Cosmetic product is to care chemical free products which help all
 At Cosmetic Product we will set an example of the products in the world of beauty without using chemical ingredients. All we are using natural ingredients.
 Most of the clients or customers are interested in beauty products. Cosmetics products are highly Priced, and it is very hard to afford for everyone and so our products applies for everyone.
 Cosmetic design products have a wonderful feature where all the members or customers can afford it products in a reasonable price .
-* Image/Natural.png
+* ! [Image](Image/Natural.png)
 
 Project Technologies/Techniques
 
@@ -69,7 +69,7 @@ Unit Testing
 
 * [Application Flow](DesignDocuments/applicationFlow.md)
 
-* [Project Plan](DesignDocuments/screens.md)
+* [Screen Design](DesignDocuments/screens.md)
 
 
 
