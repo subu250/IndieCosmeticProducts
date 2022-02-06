@@ -9,7 +9,7 @@ Our mission at Cosmetic product is to care chemical free products which help all
 At Cosmetic Product we will set an example of the products in the world of beauty without using chemical ingredients. All we are using natural ingredients.
 Most of the clients or customers are interested in beauty products. Cosmetics products are highly Priced, and it is very hard to afford for everyone and so our products applies for everyone.
 Cosmetic design products have a wonderful feature where all the members or customers can afford it products in a reasonable price .
-* [Image](https://github.com/subu250/IndieCosmeticProducts/Image/Natural.jpeg)
+* [image](Image/Natural.jpeg)
 
 Project Technologies/Techniques
 
@@ -68,8 +68,6 @@ Unit Testing
 * [Tasks](https://github.com/subu250/IndieCosmeticProducts/tasks.md)
 
 * [Application Flow](https://github.com/subu250/IndieCosmeticProducts/applicationFlow.md)
-
-
 
 * [Project Plan](https://github.com/subu250/IndieCosmeticProducts/screens.md)
 
