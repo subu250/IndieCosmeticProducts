@@ -1,19 +1,19 @@
 ### SignIn Page
 
-![SignIn Page](DesignDocuments/wireframes/Signin.png)
+![SignIn Page](wireframes/SingIn.png)
 
 ### SignUp Page
 
-![SignIn Page](DesignDocuments/wireframes/SignUp.png)
+![SignIn Page](wireframes/SignUp.png)
 
 
 ### ViewProduct Page
 
-![ViewProducts Page](DesignDocuments/wireframes/ViewProducts.png)
+![ViewProducts Page](wireframes/ViewProducts.png)
 
 
 ### AddProduct Page
 
-![AddProduct Page](DesignDocuments/wireframes/AddProduct.png)
+![AddProduct Page](wireframes/AddProduct.png)
 
 
