@@ -11,9 +11,14 @@
 
 ![ViewProducts Page](wireframes/ViewProducts.png)
 
-
-### AddProduct Page
+### AddProduct 
 
 ![AddProduct Page](wireframes/AddProduct.png)
 
+### Delete Locatin
 
+![Delete Locatin](wireframes/delete.png)
+
+### Search Location
+
+![Search Location](wireframes/Search.png)

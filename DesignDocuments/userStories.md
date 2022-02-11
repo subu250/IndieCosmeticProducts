@@ -12,25 +12,25 @@ User can sign in an created account. *
 
 Sign-in user, can edit profile info.
 
-### Buy New Product
+### Add New Product
 
-Signed - in user can buy new product. *
+Signed - in user can add new product. *
 
-### View Products
+### View Products  
 
 Signed - in user, User can view products. *
 
-### Product Info
+### Delete the  Products 
 
-Signed - in user can view products information.
+Signed - in user, User can delete products. *
 
-### Search for Products
+### Search for Locations
 
-Signed-in user can can search for a products.
+Signed-in user can can search for a Locations. *
 
-Signed-in user can save product information for future order.
+### Edit and Delete Locations
 
-Signed-in user can view order information.
+User can update and delete a location to search for the products.
 
 
 *Denotes Minimum Viable Product (MVP)
