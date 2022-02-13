@@ -12,72 +12,52 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
-
 /**
  * Provides access the database
+ * Created on 8/31/16.
  *
- * @author subu
+ * @author pwaite
  */
 
 public class Database {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-
+    // create an object of the class Database
     private static Database instance = new Database();
 
     private Properties properties;
 
     private Connection connection;
 
-    private static final String DATABASE_PROPERTIES_FILE = "/database.properties";
-
-    /**
-     * Create the database class
-     */
+    // private constructor prevents instantiating this class anywhere else
     private Database() {
         loadProperties();
 
     }
 
-    /**
-     * Load up properties for connection info
-     */
-
     private void loadProperties() {
         properties = new Properties();
         try {
-            properties.load (this.getClass().getResourceAsStream(DATABASE_PROPERTIES_FILE));
+            properties.load (this.getClass().getResourceAsStream("/database.properties"));
         } catch (IOException ioe) {
-            logger.error("Database.loadProperties()...Cannot load the properties file", ioe);
+            System.out.println("Database.loadProperties()...Cannot load the properties file");
+            ioe.printStackTrace();
         } catch (Exception e) {
-            logger.error("Database.loadProperties()...", e);
+            System.out.println("Database.loadProperties()..." + e);
+            e.printStackTrace();
         }
 
     }
 
-    /**
-     * Gets instance - singleton pattern usage.
-     *
-     * @return the instance
-     */
+    // get the only Database object available
     public static Database getInstance() {
         return instance;
     }
 
-    /**
-     * Gets connection.
-     *
-     * @return the connection
-     */
     public Connection getConnection() {
         return connection;
     }
 
-    /**
-     * Connect.
-     *
-     * @throws Exception the exception
-     */
     public void connect() throws Exception {
         if (connection != null)
             return;
@@ -92,15 +72,12 @@ public class Database {
         connection = DriverManager.getConnection(url, properties.getProperty("username"),  properties.getProperty("password"));
     }
 
-    /**
-     * Disconnect.
-     */
     public void disconnect() {
         if (connection != null) {
             try {
                 connection.close();
             } catch (SQLException e) {
-                logger.error("Cannot close connection", e);
+                System.out.println("Cannot close connection" + e);
             }
         }
 

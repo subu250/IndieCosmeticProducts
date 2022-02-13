@@ -8,19 +8,29 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class UserDaoTest {
+
+class UserDaoTest {
 
     UserDao dao;
 
-    /**
-     * Creating the dao.
-     */
+
     @BeforeEach
     void setUp() {
-        dao = new UserDao();
 
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
+
+        dao = new UserDao();
+    }
+
+    /**
+     * Verify successful retrieval of a User
+     */
+    @Test
+    void getByIdSuccess() {
+        User retrievedUser = dao.getById(5);
+        assertNotNull(retrievedUser);
+        assertEquals("Mack", retrievedUser.getLastName());
     }
 
 
@@ -31,35 +41,11 @@ public class UserDaoTest {
     @Test
     void insertSuccess() {
 
-        User user = new User();
-        user.setId(11);
-        user.setFirstName("John");
-        user.setLastName("Doe");
-        int id = dao.insert(user);
-        User retrieveUser= dao.getById(id);
-        assertEquals(user.getFirstName(), retrieveUser.getFirstName());
-    }
-    /**
-     * Verify successful retrieval of a User
-     */
-    @Test
-    void getByIdSuccess() {
-        User retrievedUser = dao.getById(1);
-        assertNotNull(retrievedUser);
-        assertEquals("Sierra", retrievedUser.getLastName());
-    }
-
-    /**
-     * Verify successful update of a User
-     */
-    @Test
-    void updateSuccess() {
-        String firstname = "James";
-        User userToUpdate = dao.getById(8);
-        userToUpdate.setFirstName(firstname);
-        dao.saveOrUpdate(userToUpdate);
-        User retrievedUser= dao.getById(8);
-        assertEquals(firstname, retrievedUser.getFirstName());
+        User newUser = new User("Sara", "stone", "intstone", "Userone@gmail.com0", "user789");
+        int id = dao.insert(newUser);
+        assertNotEquals(0, id);
+        User insertedUser = dao.getById(id);
+        assertEquals("Sara", insertedUser.getFirstName());
     }
 
     /**
@@ -67,8 +53,22 @@ public class UserDaoTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(9));
-        assertNull(dao.getById(9));
+        dao.delete(dao.getById(2));
+        assertNull(dao.getById(2));
+    }
+
+
+    /**
+     * Verify successful update of a User
+     */
+    @Test
+    void updateSuccess() {
+        String firstname = "James";
+        User userToUpdate = dao.getById(6);
+        userToUpdate.setFirstName(firstname);
+        dao.saveOrUpdate(userToUpdate);
+        User retrievedUser= dao.getById(6);
+        assertEquals(firstname, retrievedUser.getFirstName());
     }
 
     /**
