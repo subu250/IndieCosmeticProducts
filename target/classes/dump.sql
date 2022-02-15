@@ -24,15 +24,15 @@ DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `user` (
-                        `id` int(11) NOT NULL AUTO_INCREMENT,
+                        `id` int NOT NULL AUTO_INCREMENT,
                         `first_name` varchar(25)  NULL,
                         `last_name` varchar(25)  NULL,
                         `user_name` varchar(25) NOT NULL,
                         `email` varchar(25)  NULL,
                         `password` varchar(25) NULL,
                         PRIMARY KEY (`id`),
-                        UNIQUE KEY `user_name_UNIQUE` (`user_name`)) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+                        UNIQUE KEY `users_user_name_uindex` (`user_name`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `user`
@@ -52,6 +52,39 @@ INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
+DROP TABLE IF EXISTS `orders`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `orders` (
+                          `id` int(11) NOT NULL AUTO_INCREMENT,
+                          `description` varchar(100) DEFAULT NULL,
+                          `user_id` int(11) NOT NULL,
+                          PRIMARY KEY (`id`),
+                          UNIQUE KEY `orders_id_uindex` (`id`),
+                          KEY `orders_user_id_fk` (`user_id`),
+                          CONSTRAINT `orders_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `orders`
+--
+
+LOCK TABLES `orders` WRITE;
+/*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+INSERT INTO `orders` VALUES (1,'Cerave',1),(2,'Cetaphil',2),(3,'Cracked cream ',2),(4,'Aveeno',1),(5,'Hand Cream ',4),(6,'Nivea',1),(7,'EyeLiner',4);
+/*!40000 ALTER TABLE `orders` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+INSERT INTO orders (id,description, user_id) VALUES (1,'Cerave',1);
+INSERT INTO orders (id,description, user_id) VALUES (2,'Cetaphil',2);
+INSERT INTO orders (id,description, user_id) VALUES (3,'Cracked cream ',2);
+INSERT INTO orders (id,description, user_id) VALUES (4,'Aveeno',1);
+INSERT INTO orders (id,description, user_id) VALUES (5,'Hand Cream ',4);
+INSERT INTO orders (id,description, user_id) VALUES (6,'Nivea',1);
+INSERT INTO orders (id,description, user_id) VALUES (7,'EyeLiner',4);
+
 --
 -- Table structure for table `product`
 --
@@ -67,6 +100,15 @@ CREATE TABLE `product` (
                            PRIMARY KEY (`id`),
                            UNIQUE KEY `product_id_uindex` (`id`)) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+
+
+select * from user;
+
+
+
+
+
 
 
 --

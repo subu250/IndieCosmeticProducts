@@ -31,6 +31,7 @@ class UserDaoTest {
         User retrievedUser = dao.getById(5);
         assertNotNull(retrievedUser);
         assertEquals("Mack", retrievedUser.getLastName());
+        //assertTrue(expectedUser.equals(actualUser));
     }
 
 

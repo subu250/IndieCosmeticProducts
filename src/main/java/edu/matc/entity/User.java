@@ -3,6 +3,7 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -30,12 +31,14 @@ public class User {
     private int id;
 
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Order> orders = new HashSet<>();
+
     /**
      * Instantiates a new User.
      */
     public User() {
     }
-
 
     /**
      * Instantiates a new User.
@@ -138,6 +141,43 @@ public class User {
         this.id = id;
     }
 
+    /**
+     * Gets orders.
+     *
+     * @return the orders
+     */
+    public Set<Order> getOrders() {
+        return orders;
+    }
+
+    /**
+     * Sets orders.
+     *
+     * @param orders the products
+     */
+    public void setOrders(Set<Order> orders) {
+        this.orders = orders;
+    }
+
+    /**
+     * Add orders.
+     *
+     * @param order the order
+     */
+    public void addOrder(Order order) {
+        orders.add(order);
+        order.setUser(this);
+    }
+
+    /**
+     * Remove order.
+     *
+     * @param order the order
+     */
+    public void removeOrder(Order order) {
+        orders.remove(order);
+        order.setUser(null);
+    }
 
     @Override
     public String toString() {

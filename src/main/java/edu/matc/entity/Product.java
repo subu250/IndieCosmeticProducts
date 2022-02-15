@@ -14,21 +14,20 @@ import java.util.Set;
     @Table(name = "products")
     public class Product {
 
-
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
         @GenericGenerator(name = "native", strategy = "native")
         private int id;
 
 
-        @Column(name = "product_name")
-        private String name;
+        @Column(name = "product_brand")
+        private String brand;
 
         @ManyToOne
         private User user;
 
         @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-        private Set<Location> shopSet = new HashSet<>();
+        private Set<Location> locationSet = new HashSet<>();
 
         @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
         private Set<Offer> offerSet = new HashSet<>();
@@ -43,31 +42,31 @@ import java.util.Set;
         /**
          * Instantiates a new Product.
          *
-         * @param name the name
+         * @param type the type
          */
-        public Product(String name) {
-            this.name = name;
+        public Product(String type) {
+            this.brand = brand;
         }
 
         /**
          * Instantiates a new Product.
          *
          * @param id   the id
-         * @param name the name
+         * @param brand the brand
          */
-        public Product(int id, String name) {
+        public Product(int id, String brand) {
             this.id = id;
-            this.name = name;
+            this.brand = brand;
         }
 
         /**
          * Instantiates a new Product.
          *
-         * @param name the name
+         * @param brand the brand
          * @param user the user
          */
-        public Product(String name, User user) {
-            this.name = name;
+        public Product(String brand, User user) {
+            this.brand = brand;
             this.user = user;
         }
 
@@ -94,55 +93,55 @@ import java.util.Set;
          *
          * @return the name
          */
-        public String getName() {
-            return name;
+        public String getBrand() {
+            return brand;
         }
 
         /**
-         * Sets name.
+         * Sets brand.
          *
-         * @param name the name
+         * @param brand the brand
          */
-        public void setName(String name) {
-            this.name = name;
+        public void setBrand(String brand) {
+            this.brand = brand;
         }
 
         /**
-         * Gets shop set
+         * Gets location set
          *
-         * @return the shop set
+         * @return the location set
          */
-        public Set<Location> getShopSet() {
-            return shopSet;
+        public Set<Location> getLocationSet() {
+            return locationSet;
         }
 
         /**
-         * Sets shop set
+         * Sets location set
          *
-         * @param shopSet the shop set
+         * @param locationSet the location set
          */
-        public void setShopSet(Set<Location> shopSet) {
-            this.shopSet = shopSet;
+        public void setLocationSet(Set<Location> locationSet) {
+            this.locationSet = locationSet;
         }
 
         /**
          * Add shop.
          *
-         * @param shop the shop
+         * @param location the location
          */
-        public void addShop(Location shop) {
-            shopSet.add(shop);
-            shop.setProduct(this);
+        public void addLocation(Location location) {
+            locationSet.add(location);
+            location.setProduct(this);
         }
 
         /**
          * Remove shop.
          *
-         * @param shop the shop
+         * @param location the location
          */
-        public void removeShop(Location shop) {
-            shopSet.remove(shop);
-            shop.setProduct(null);
+        public void removeLocation(Location location) {
+            locationSet.remove(location);
+            location.setProduct(null);
         }
 
         /**
@@ -195,9 +194,9 @@ import java.util.Set;
         public String toString() {
             return "Product{" +
                     "id=" + id +
-                    ", name='" + name + '\'' +
+                    ", brand='" + brand + '\'' +
                     ", user=" + user +
-                    ", shopSet=" + shopSet +
+                    ", locationSet=" + locationSet +
                     ", offerSet=" + offerSet +
                     '}';
         }
@@ -207,12 +206,12 @@ import java.util.Set;
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
             Product product = (Product) o;
-            return id == product.id && name.equals(product.name);
+            return id == product.id && brand.equals(product.brand);
         }
 
         @Override
         public int hashCode() {
-            return Objects.hash(id, name);
+            return Objects.hash(id, brand);
         }
 
     }
