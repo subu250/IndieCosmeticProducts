@@ -3,6 +3,9 @@ package edu.matc.persistence;
 import edu.matc.entity.Order;
 import edu.matc.entity.User;
 import edu.matc.testUtils.Database;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,28 +16,42 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * The type Order dao test.
  */
+
 class OrderDaoTest {
 
-    OrderDao dao;
+    /**
+     * The User dao.
+     */
+    GenericDao userDao;
+    /**
+     * The Order dao.
+     */
+    GenericDao orderDao;
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
+    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
-     * Creating the dao.
+     * Sets up.
      */
     @BeforeEach
     void setUp() {
-        dao = new OrderDao();
-
+        userDao = new GenericDao(User.class);
+        orderDao = new GenericDao(Order.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
-
     }
+
 
     /**
      * Verifies gets all orders successfully.
      */
     @Test
     void getAllOrdersSuccess() {
-        List<Order> orders = dao.getAllOrders();
+        List<Order> orders = orderDao.getAll();
         assertEquals(7, orders.size());
     }
 
@@ -44,7 +61,7 @@ class OrderDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        Order retrievedOrder = dao.getById(2);
+        Order retrievedOrder = (Order) orderDao.getById(2);
         assertNotNull(retrievedOrder);
         assertEquals("Cetaphil", retrievedOrder.getDescription());
     }
@@ -60,10 +77,10 @@ class OrderDaoTest {
         Order newOrder = new Order("Cerave", user);
         user.addOrder(newOrder);
 
-        int id = dao.insert(newOrder);
+        int id = orderDao.insert(newOrder);
 
-        assertNotEquals(0,id);
-        Order insertedOrder = dao.getById(id);
+        assertNotEquals(0, id);
+        Order insertedOrder = (Order) orderDao.getById(id);
         assertEquals("Cerave", insertedOrder.getDescription());
         assertNotNull(insertedOrder.getUser());
         assertEquals("Sam", insertedOrder.getUser().getFirstName());
@@ -75,8 +92,9 @@ class OrderDaoTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+
+        Order delete = (Order) orderDao.getById(3);
+        assertNull(orderDao.getById(3));
     }
 
     /**
@@ -85,10 +103,11 @@ class OrderDaoTest {
     @Test
     void updateSuccess() {
         String description = "Aveeno";
-        Order orderToUpdate = dao.getById(4);
+
+        Order orderToUpdate = (Order) orderDao.getById(4);
         orderToUpdate.setDescription(description);
-        dao.saveOrUpdate(orderToUpdate);
-        Order retrievedOrder = dao.getById(4);
+        orderDao.saveOrUpdate(orderToUpdate);
+        Order retrievedOrder = (Order) orderDao.getById(4);
         assertEquals(description, retrievedOrder.getDescription());
     }
 
@@ -97,17 +116,9 @@ class OrderDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Order> orders = dao.getByPropertyEqual("description", "Cerave");
+        List<Order> orders = orderDao.getByPropertyEqual("description", "Cerave");
         assertEquals(2, orders.size());
         assertEquals(1, orders.get(0).getId());
     }
 
-    /**
-     * Verify successful get by property (like match)
-     */
-    @Test
-    void getByPropertyLikeSuccess() {
-        List<Order> orders = dao.getByPropertyLike("description", "Hand Cream");
-        assertEquals(1, orders.size());
-    }
 }

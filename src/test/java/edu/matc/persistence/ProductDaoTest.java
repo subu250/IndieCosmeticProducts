@@ -1,8 +1,12 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Order;
 import edu.matc.entity.Product;
 import edu.matc.entity.User;
 import edu.matc.testUtils.Database;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,20 +17,34 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * The type Product dao test.
  */
+
+
 class ProductDaoTest {
 
-    ProductDao dao;
+    /**
+     * The User dao.
+     */
+    GenericDao userDao;
+    /**
+     * The Order dao.
+     */
+    GenericDao productDao;
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
+    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
-     * Creating the dao.
+     * Sets up.
      */
     @BeforeEach
     void setUp() {
-        dao = new ProductDao();
-
+        userDao = new GenericDao(User.class);
+        productDao = new GenericDao(Product.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
-
     }
 
     /**
@@ -34,8 +52,8 @@ class ProductDaoTest {
      */
     @Test
     void getAllProductsSuccess() {
-        List<Product> orders = dao.getAllProducts();
-        assertEquals(7, orders.size());
+        List<Order> products = productDao.getAll();
+        assertEquals(7, products.size());
     }
 
 
@@ -44,7 +62,7 @@ class ProductDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        Product retrievedProduct = dao.getById(2);
+        Product retrievedProduct = (Product) productDao.getById(2);
         assertNotNull(retrievedProduct);
         assertEquals("Users", retrievedProduct.getBrand());
     }
@@ -59,10 +77,10 @@ class ProductDaoTest {
         User user = userDao.getById(1);
         Product newProduct = new Product("Cerave", user);
        // user.addOrder(newOrder);
-        int id = dao.insert(newProduct);
-
+        int id = productDao.insert(newProduct);
         assertNotEquals(0, id);
-        Product insertedProduct = dao.getById(id);
+
+        Product insertedProduct = (Product) productDao.getById(id);
         assertEquals("ABC", insertedProduct.getBrand());
         assertNotNull(insertedProduct.getUser());
         assertEquals("Rose", insertedProduct.getUser().getFirstName());
@@ -74,8 +92,9 @@ class ProductDaoTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+        Product delete = (Product) productDao.getById(3);
+
+        assertNull(productDao.getById(3));
     }
 
     /**
@@ -84,10 +103,11 @@ class ProductDaoTest {
     @Test
     void updateSuccess() {
         String brand = "Cerave";
-        Product productToUpdate = dao.getById(3);
+
+        Product productToUpdate = (Product) productDao.getById(3);
         productToUpdate.setBrand(brand);
-        dao.saveOrUpdate(productToUpdate);
-        Product retrievedProduct = dao.getById(3);
+        productDao.saveOrUpdate(productToUpdate);
+        Product retrievedProduct = (Product) productDao.getById(3);
         assertEquals(brand, retrievedProduct.getBrand());
     }
 
@@ -96,17 +116,11 @@ class ProductDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Product> products = dao.getByPropertyEqual("brand", "b");
+
+        List<Product> products = productDao.getByPropertyEqual("brand", "b");
         assertEquals(1, products.size());
         assertEquals(2, products.get(0).getId());
     }
 
-    /**
-     * Verify successful get by property (like match)
-     */
-    @Test
-    void getByPropertyLikeSuccess() {
-        List<Product> products = dao.getByPropertyLike("brand", "b");
-        assertEquals(3, products.size());
-    }
+
 }

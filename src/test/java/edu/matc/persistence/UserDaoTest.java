@@ -2,6 +2,9 @@ package edu.matc.persistence;
 
 import edu.matc.entity.User;
 import edu.matc.testUtils.Database;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.List;
@@ -11,16 +14,30 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class UserDaoTest {
 
-    UserDao dao;
+    /**
+     * The User dao.
+     */
+    GenericDao userDao;
+    /**
+     * The Product dao.
+     */
+    GenericDao productDao;
 
+    private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
+    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
+    /**
+     * Sets up.
+     */
     @BeforeEach
     void setUp() {
-
+        userDao = new GenericDao(User.class);
+        productDao = new GenericDao(ProductDao.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
-
-        dao = new UserDao();
     }
 
     /**
@@ -28,7 +45,7 @@ class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(5);
+        User retrievedUser = (User) userDao.getById(1);
         assertNotNull(retrievedUser);
         assertEquals("Mack", retrievedUser.getLastName());
         //assertTrue(expectedUser.equals(actualUser));
@@ -43,9 +60,9 @@ class UserDaoTest {
     void insertSuccess() {
 
         User newUser = new User("Sara", "stone", "intstone", "Userone@gmail.com0", "user789");
-        int id = dao.insert(newUser);
+        int id = userDao.insert(newUser);
         assertNotEquals(0, id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User)userDao.getById(id);
         assertEquals("Sara", insertedUser.getFirstName());
     }
 
@@ -54,8 +71,8 @@ class UserDaoTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(2));
-        assertNull(dao.getById(2));
+        User delete = (User) userDao.getById(2);
+        assertNull(userDao.getById(2));
     }
 
 
@@ -65,10 +82,10 @@ class UserDaoTest {
     @Test
     void updateSuccess() {
         String firstname = "James";
-        User userToUpdate = dao.getById(6);
+        User userToUpdate = (User) userDao.getById(6);
         userToUpdate.setFirstName(firstname);
-        dao.saveOrUpdate(userToUpdate);
-        User retrievedUser= dao.getById(6);
+        userDao.saveOrUpdate(userToUpdate);
+        User retrievedUser=(User) userDao.getById(6);
         assertEquals(firstname, retrievedUser.getFirstName());
     }
 
@@ -77,8 +94,9 @@ class UserDaoTest {
      */
     @Test
     void getAllSuccess() {
-        List<User> users = dao.getAll();
-        assertEquals(5, users.size());
+
+        List<User> users = userDao.getAll();
+        assertEquals(6, users.size());
     }
 
 }

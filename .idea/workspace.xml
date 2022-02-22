@@ -9,25 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da4a2b1e-6e4f-43c1-a36d-0e4095c3c25a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ed9187a0-cad7-4e54-b673-fb164b8a64cd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ed9187a0-cad7-4e54-b673-fb164b8a64cd.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocuments/ProjectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocuments/ProjectPlan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TimeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/TimeLog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Offer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dump.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/OrderDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/ProductDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/OrderDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/OrderDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/ProductDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/ProductDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleandb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleandb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dump.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Offer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/Offer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cleandb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cleandb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/UserDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +64,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/screenshots" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -90,11 +77,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screenshots" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/DesignDocuments/wireframes" />
-      <recent name="$PROJECT_DIR$/src/test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -308,7 +295,7 @@
       <updated>1643840109534</updated>
       <workItem from="1643840111080" duration="11451000" />
       <workItem from="1644173131031" duration="34417000" />
-      <workItem from="1644763481365" duration="17914000" />
+      <workItem from="1644763481365" duration="22205000" />
     </task>
     <servers />
   </component>
@@ -319,7 +306,7 @@
     <SUITE FILE_PATH="coverage/IndieCosmeticProducts$UserDaoTest.ic" NAME="UserDaoTest Coverage Results" MODIFIED="1644768052414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.matc.persistence.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/IndieCosmeticProducts$OrderDaoTest.ic" NAME="OrderDaoTest Coverage Results" MODIFIED="1644947108790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/IndieCosmeticProducts$OrderDaoTest.ic" NAME="OrderDaoTest Coverage Results" MODIFIED="1644947239990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.matc.persistence.*</FILTER>
     </SUITE>
   </component>
