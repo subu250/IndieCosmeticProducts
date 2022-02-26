@@ -1,0 +1,8 @@
+edu/matc/entity/Offer.class
+edu/matc/persistence/GenericDao.class
+edu/matc/entity/User.class
+edu/matc/entity/Product.class
+edu/matc/persistence/UserDao.class
+edu/matc/persistence/SessionFactoryProvider.class
+edu/matc/entity/Order.class
+edu/matc/entity/Location.class

@@ -11,7 +11,6 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
 class UserDaoTest {
 
     /**
@@ -35,7 +34,7 @@ class UserDaoTest {
     @BeforeEach
     void setUp() {
         userDao = new GenericDao(User.class);
-        productDao = new GenericDao(ProductDao.class);
+       // productDao = new GenericDao(ProductDao.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -50,7 +49,6 @@ class UserDaoTest {
         assertEquals("Mack", retrievedUser.getLastName());
         //assertTrue(expectedUser.equals(actualUser));
     }
-
 
     /**
      * Verify successful insert of User

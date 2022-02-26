@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: edu.matc.persistence.ProductDaoTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.026 sec <<< FAILURE! - in edu.matc.persistence.ProductDaoTest
+deleteSuccess()  Time elapsed: 0.001 sec  <<< ERROR!
+org.hibernate.UnknownEntityTypeException: Unable to locate persister: edu.matc.entity.Product
+	at edu.matc.persistence.ProductDaoTest.deleteSuccess(ProductDaoTest.java:95)
+
+getByPropertyEqualSuccess()  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Not an entity: class edu.matc.entity.Product
+	at edu.matc.persistence.ProductDaoTest.getByPropertyEqualSuccess(ProductDaoTest.java:120)
+
+getByIdSuccess()  Time elapsed: 0.001 sec  <<< ERROR!
+org.hibernate.UnknownEntityTypeException: Unable to locate persister: edu.matc.entity.Product
+	at edu.matc.persistence.ProductDaoTest.getByIdSuccess(ProductDaoTest.java:65)
+
+getAllProductsSuccess()  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Not an entity: class edu.matc.entity.Product
+	at edu.matc.persistence.ProductDaoTest.getAllProductsSuccess(ProductDaoTest.java:55)
+
+updateSuccess()  Time elapsed: 0 sec  <<< ERROR!
+org.hibernate.UnknownEntityTypeException: Unable to locate persister: edu.matc.entity.Product
+	at edu.matc.persistence.ProductDaoTest.updateSuccess(ProductDaoTest.java:107)
+
+insertSuccess()  Time elapsed: 0.024 sec  <<< ERROR!
+org.hibernate.MappingException: Unknown entity: edu.matc.entity.Product
+	at edu.matc.persistence.ProductDaoTest.insertSuccess(ProductDaoTest.java:80)
+

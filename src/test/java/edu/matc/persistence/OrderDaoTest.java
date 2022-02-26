@@ -93,9 +93,13 @@ class OrderDaoTest {
     @Test
     void deleteSuccess() {
 
-        Order delete = (Order) orderDao.getById(3);
+        orderDao.delete(orderDao.getById(3));
         assertNull(orderDao.getById(3));
+
     }
+
+
+
 
     /**
      * Verify successful update of order
