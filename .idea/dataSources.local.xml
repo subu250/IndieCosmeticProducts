@@ -18,7 +18,12 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="Cosmetic" uuid="ed9187a0-cad7-4e54-b673-fb164b8a64cd">
+    <data-source name="Cosme" uuid="b258ee96-a85d-4fc9-ad9c-68f217a43980">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping />
+    </data-source>
+    <data-source name="Cosmetic" uuid="901778cb-923e-485b-996e-f28faf1b8872">
       <database-info product="MySQL" version="8.0.28" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.0.28" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>

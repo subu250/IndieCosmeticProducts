@@ -1,22 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: edu.matc.persistence.UserDaoTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 2.922 sec <<< FAILURE! - in edu.matc.persistence.UserDaoTest
-deleteSuccess()  Time elapsed: 0.177 sec  <<< FAILURE!
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.186 sec <<< FAILURE! - in edu.matc.persistence.UserDaoTest
+deleteSuccess()  Time elapsed: 0.181 sec  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <null> but was: <User{firstName='Fred', lastName='Hensen', userName='fhensen', email='Userone@gmail.com0', password='user123', id=2}>
-	at edu.matc.persistence.UserDaoTest.deleteSuccess(UserDaoTest.java:75)
+	at edu.matc.persistence.UserDaoTest.deleteSuccess(UserDaoTest.java:73)
 
-getAllSuccess()  Time elapsed: 0.211 sec  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <6> but was: <7>
-	at edu.matc.persistence.UserDaoTest.getAllSuccess(UserDaoTest.java:99)
-
-getByIdSuccess()  Time elapsed: 0.025 sec  <<< FAILURE!
+getByIdSuccess()  Time elapsed: 0.014 sec  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <Mack> but was: <Toyne>
-	at edu.matc.persistence.UserDaoTest.getByIdSuccess(UserDaoTest.java:50)
-
-insertSuccess()  Time elapsed: 0.099 sec  <<< ERROR!
-org.hibernate.exception.ConstraintViolationException: could not execute statement
-	at edu.matc.persistence.UserDaoTest.insertSuccess(UserDaoTest.java:63)
-Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'intstone' for key 'user.users_user_name_uindex'
-	at edu.matc.persistence.UserDaoTest.insertSuccess(UserDaoTest.java:63)
+	at edu.matc.persistence.UserDaoTest.getByIdSuccess(UserDaoTest.java:49)
 

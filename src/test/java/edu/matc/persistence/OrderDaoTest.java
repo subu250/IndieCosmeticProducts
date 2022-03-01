@@ -98,9 +98,6 @@ class OrderDaoTest {
 
     }
 
-
-
-
     /**
      * Verify successful update of order
      */

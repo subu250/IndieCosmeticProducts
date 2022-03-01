@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.matc.persistence.ProductDaoTest" time="0.026" tests="6" errors="6" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.matc.persistence.ProductDaoTest" time="0.015" tests="6" errors="6" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 package"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -64,17 +64,17 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="deleteSuccess" classname="edu.matc.persistence.ProductDaoTest" time="0.001">
+  <testcase name="deleteSuccess" classname="edu.matc.persistence.ProductDaoTest" time="0">
     <error message="Unable to locate persister: edu.matc.entity.Product" type="org.hibernate.UnknownEntityTypeException">org.hibernate.UnknownEntityTypeException: Unable to locate persister: edu.matc.entity.Product
 	at edu.matc.persistence.ProductDaoTest.deleteSuccess(ProductDaoTest.java:95)
 </error>
   </testcase>
-  <testcase name="getByPropertyEqualSuccess" classname="edu.matc.persistence.ProductDaoTest" time="0">
+  <testcase name="getByPropertyEqualSuccess" classname="edu.matc.persistence.ProductDaoTest" time="0.001">
     <error message="Not an entity: class edu.matc.entity.Product" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Not an entity: class edu.matc.entity.Product
 	at edu.matc.persistence.ProductDaoTest.getByPropertyEqualSuccess(ProductDaoTest.java:120)
 </error>
   </testcase>
-  <testcase name="getByIdSuccess" classname="edu.matc.persistence.ProductDaoTest" time="0.001">
+  <testcase name="getByIdSuccess" classname="edu.matc.persistence.ProductDaoTest" time="0">
     <error message="Unable to locate persister: edu.matc.entity.Product" type="org.hibernate.UnknownEntityTypeException">org.hibernate.UnknownEntityTypeException: Unable to locate persister: edu.matc.entity.Product
 	at edu.matc.persistence.ProductDaoTest.getByIdSuccess(ProductDaoTest.java:65)
 </error>
@@ -84,12 +84,12 @@
 	at edu.matc.persistence.ProductDaoTest.getAllProductsSuccess(ProductDaoTest.java:55)
 </error>
   </testcase>
-  <testcase name="updateSuccess" classname="edu.matc.persistence.ProductDaoTest" time="0">
+  <testcase name="updateSuccess" classname="edu.matc.persistence.ProductDaoTest" time="0.001">
     <error message="Unable to locate persister: edu.matc.entity.Product" type="org.hibernate.UnknownEntityTypeException">org.hibernate.UnknownEntityTypeException: Unable to locate persister: edu.matc.entity.Product
 	at edu.matc.persistence.ProductDaoTest.updateSuccess(ProductDaoTest.java:107)
 </error>
   </testcase>
-  <testcase name="insertSuccess" classname="edu.matc.persistence.ProductDaoTest" time="0.024">
+  <testcase name="insertSuccess" classname="edu.matc.persistence.ProductDaoTest" time="0.013">
     <error message="Unknown entity: edu.matc.entity.Product" type="org.hibernate.MappingException">org.hibernate.MappingException: Unknown entity: edu.matc.entity.Product
 	at edu.matc.persistence.ProductDaoTest.insertSuccess(ProductDaoTest.java:80)
 </error>
