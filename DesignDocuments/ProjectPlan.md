@@ -35,15 +35,15 @@
 
 ## Week 6
 
-- [] add Location user story
-- [] Build Location entity and DAO
-- [] Build JUnit tests for Location DAO
-- [] Work to create AWS account
-- [] Deploy Application
+- [X] add Location user story
+- [X] Build Location entity and DAO
+- [X] Build JUnit tests for Order DAO
+- [X] Work to create AWS account
+- [X] Deploy Application
 
 ## Week 7
 
-- [] Ready to review for Checkpoint 2
+- [X] Ready to review for Checkpoint 2
 - [] Work on authentication 
 
 ## Week 8
