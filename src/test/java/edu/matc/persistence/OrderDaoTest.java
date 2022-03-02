@@ -52,7 +52,7 @@ class OrderDaoTest {
     @Test
     void getAllOrdersSuccess() {
         List<Order> orders = orderDao.getAll();
-        assertEquals(7, orders.size());
+        assertEquals(9, orders.size());
     }
 
 
@@ -118,7 +118,7 @@ class OrderDaoTest {
     @Test
     void getByPropertyEqualSuccess() {
         List<Order> orders = orderDao.getByPropertyEqual("description", "Cerave");
-        assertEquals(2, orders.size());
+        assertEquals(4, orders.size());
         assertEquals(1, orders.get(0).getId());
     }
 
