@@ -44,18 +44,18 @@
 ## Week 7
 
 - [X] Ready to review for Checkpoint 2
-- [] Work on authentication 
+- [x] Work on authentication 
 
 ## Week 8
 
-- [] Work on RESTful API Web Services
-- []  Work on JUnit tests for API
+- [x] Work on RESTful API Web Services
+- [x]  Work on JUnit tests for API
 
 ## Week 9
 
-- [] Ready to complete for Checkpoint 3
+- [x] Ready to complete for Checkpoint 3
 - [] Work on to build RESTful services.
-- [] Deployed database to AWS
+- [x] Deployed database to AWS
 
 ## Week 10
 
