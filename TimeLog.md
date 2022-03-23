@@ -8,3 +8,6 @@
 | 2/14/22 | Week 5 exercise, add hibernate and continue working on projects  | 7|   | 
 | 2/21/22 | Week 6 exercise implemented in the project and peer review   | 9|   | 
 | 2/28/22 | Start on Week 7 exercise, ready for checkpoint 2 as well continue going thru the lectures/videos  | 5|   | 
+| 3/07/22 | Start on Week 8 exercise, continue going thru the lectures/videos  | 5|   | 
+| 3/14/22 | Ready for checkpoint 3 as well continue going thru the lectures/videos  | 6|   | 
+| 3/21/22 | Continue going thru the lectures/videos  | 5|   | 
