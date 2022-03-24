@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.matc.persistence.UserDaoTest" time="3.186" tests="5" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.matc.persistence.UserDaoTest" time="3.44" tests="5" errors="1" skipped="0" failures="3">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/subu/projects/IndieCosmeticProducts"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/subu/projects/student/IndieCosmeticProducts"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://openjdk.java.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/subu/projects/IndieCosmeticProducts"/>
+    <property name="user.dir" value="/Users/subu/projects/student/IndieCosmeticProducts"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11.0.12+8-LTS-237"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 package"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 install"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -64,17 +64,27 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="deleteSuccess" classname="edu.matc.persistence.UserDaoTest" time="0.181">
+  <testcase name="deleteSuccess" classname="edu.matc.persistence.UserDaoTest" time="0.179">
     <failure message="expected: &lt;null&gt; but was: &lt;User{firstName=&apos;Fred&apos;, lastName=&apos;Hensen&apos;, userName=&apos;fhensen&apos;, email=&apos;Userone@gmail.com0&apos;, password=&apos;user123&apos;, id=2}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <null> but was: <User{firstName='Fred', lastName='Hensen', userName='fhensen', email='Userone@gmail.com0', password='user123', id=2}>
 	at edu.matc.persistence.UserDaoTest.deleteSuccess(UserDaoTest.java:73)
 ]]></failure>
   </testcase>
-  <testcase name="getAllSuccess" classname="edu.matc.persistence.UserDaoTest" time="0.198"/>
-  <testcase name="getByIdSuccess" classname="edu.matc.persistence.UserDaoTest" time="0.014">
+  <testcase name="getAllSuccess" classname="edu.matc.persistence.UserDaoTest" time="0.214">
+    <failure message="expected: &lt;6&gt; but was: &lt;7&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <6> but was: <7>
+	at edu.matc.persistence.UserDaoTest.getAllSuccess(UserDaoTest.java:97)
+]]></failure>
+  </testcase>
+  <testcase name="getByIdSuccess" classname="edu.matc.persistence.UserDaoTest" time="0.027">
     <failure message="expected: &lt;Mack&gt; but was: &lt;Toyne&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Mack> but was: <Toyne>
 	at edu.matc.persistence.UserDaoTest.getByIdSuccess(UserDaoTest.java:49)
 ]]></failure>
   </testcase>
-  <testcase name="updateSuccess" classname="edu.matc.persistence.UserDaoTest" time="0.024"/>
-  <testcase name="insertSuccess" classname="edu.matc.persistence.UserDaoTest" time="0.017"/>
+  <testcase name="updateSuccess" classname="edu.matc.persistence.UserDaoTest" time="0.025"/>
+  <testcase name="insertSuccess" classname="edu.matc.persistence.UserDaoTest" time="0.097">
+    <error message="could not execute statement" type="org.hibernate.exception.ConstraintViolationException">org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at edu.matc.persistence.UserDaoTest.insertSuccess(UserDaoTest.java:61)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'intstone' for key 'user.users_user_name_uindex'
+	at edu.matc.persistence.UserDaoTest.insertSuccess(UserDaoTest.java:61)
+</error>
+  </testcase>
 </testsuite>

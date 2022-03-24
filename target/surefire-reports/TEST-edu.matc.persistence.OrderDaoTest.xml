@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.matc.persistence.OrderDaoTest" time="0.198" tests="6" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.matc.persistence.OrderDaoTest" time="0.265" tests="6" errors="1" skipped="0" failures="2">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/subu/projects/IndieCosmeticProducts"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/subu/projects/student/IndieCosmeticProducts"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://openjdk.java.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/subu/projects/IndieCosmeticProducts"/>
+    <property name="user.dir" value="/Users/subu/projects/student/IndieCosmeticProducts"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11.0.12+8-LTS-237"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 package"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 install"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -64,18 +64,22 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="deleteSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.026"/>
-  <testcase name="getAllOrdersSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.049">
-    <failure message="expected: &lt;7&gt; but was: &lt;6&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <7> but was: <6>
+  <testcase name="deleteSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.012">
+    <error message="attempt to create delete event with null entity" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: attempt to create delete event with null entity
+	at edu.matc.persistence.OrderDaoTest.deleteSuccess(OrderDaoTest.java:96)
+</error>
+  </testcase>
+  <testcase name="getAllOrdersSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.087">
+    <failure message="expected: &lt;9&gt; but was: &lt;12&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <9> but was: <12>
 	at edu.matc.persistence.OrderDaoTest.getAllOrdersSuccess(OrderDaoTest.java:55)
 ]]></failure>
   </testcase>
-  <testcase name="getByPropertyEqualSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.038">
-    <failure message="expected: &lt;2&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+  <testcase name="getByPropertyEqualSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.032">
+    <failure message="expected: &lt;4&gt; but was: &lt;7&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <4> but was: <7>
 	at edu.matc.persistence.OrderDaoTest.getByPropertyEqualSuccess(OrderDaoTest.java:121)
 ]]></failure>
   </testcase>
-  <testcase name="getByIdSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.014"/>
-  <testcase name="updateSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.038"/>
-  <testcase name="insertSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.033"/>
+  <testcase name="getByIdSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.013"/>
+  <testcase name="updateSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.06"/>
+  <testcase name="insertSuccess" classname="edu.matc.persistence.OrderDaoTest" time="0.061"/>
 </testsuite>

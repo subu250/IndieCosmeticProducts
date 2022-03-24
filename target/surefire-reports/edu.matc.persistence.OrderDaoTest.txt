@@ -1,12 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: edu.matc.persistence.OrderDaoTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec <<< FAILURE! - in edu.matc.persistence.OrderDaoTest
-getAllOrdersSuccess()  Time elapsed: 0.049 sec  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <7> but was: <6>
+Tests run: 6, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.265 sec <<< FAILURE! - in edu.matc.persistence.OrderDaoTest
+deleteSuccess()  Time elapsed: 0.012 sec  <<< ERROR!
+java.lang.IllegalArgumentException: attempt to create delete event with null entity
+	at edu.matc.persistence.OrderDaoTest.deleteSuccess(OrderDaoTest.java:96)
+
+getAllOrdersSuccess()  Time elapsed: 0.087 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <9> but was: <12>
 	at edu.matc.persistence.OrderDaoTest.getAllOrdersSuccess(OrderDaoTest.java:55)
 
-getByPropertyEqualSuccess()  Time elapsed: 0.038 sec  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+getByPropertyEqualSuccess()  Time elapsed: 0.032 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <4> but was: <7>
 	at edu.matc.persistence.OrderDaoTest.getByPropertyEqualSuccess(OrderDaoTest.java:121)
 

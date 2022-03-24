@@ -56,7 +56,6 @@ class ProductDaoTest {
         assertEquals(7, products.size());
     }
 
-
     /**
      * Verifies a product is returned correctly based on id search
      */

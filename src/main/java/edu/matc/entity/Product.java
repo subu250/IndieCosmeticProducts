@@ -61,7 +61,6 @@ import java.util.Set;
 
         /**
          * Instantiates a new Product.
-         *
          * @param brand the brand
          * @param user the user
          */
