@@ -50,7 +50,7 @@ class ProductDaoTest {
     /**
      * Verifies gets all products successfully.
      */
-    @Test
+  //  @Test
     void getAllProductsSuccess() {
         List<Order> products = productDao.getAll();
         assertEquals(7, products.size());
@@ -59,7 +59,7 @@ class ProductDaoTest {
     /**
      * Verifies a product is returned correctly based on id search
      */
-    @Test
+  //  @Test
     void getByIdSuccess() {
         Product retrievedProduct = (Product) productDao.getById(2);
         assertNotNull(retrievedProduct);
@@ -69,7 +69,7 @@ class ProductDaoTest {
     /**
      * Verify successful insert of a product
      */
-    @Test
+  //  @Test
     void insertSuccess() {
 
         UserDao userDao = new UserDao();
@@ -89,7 +89,7 @@ class ProductDaoTest {
     /**
      * Verify successful delete of product
      */
-    @Test
+  //  @Test
     void deleteSuccess() {
         Product delete = (Product) productDao.getById(3);
 
@@ -99,7 +99,7 @@ class ProductDaoTest {
     /**
      * Verify successful update of product
      */
-    @Test
+  //  @Test
     void updateSuccess() {
         String brand = "Cerave";
 
@@ -113,7 +113,7 @@ class ProductDaoTest {
     /**
      * Verify successful get by property (equal match)
      */
-    @Test
+ //   @Test
     void getByPropertyEqualSuccess() {
 
         List<Product> products = productDao.getByPropertyEqual("brand", "b");

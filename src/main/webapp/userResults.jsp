@@ -1,16 +1,18 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: subu
-  Date: 3/24/22
-  Time: 9:17 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@include file="taglib.jsp"%>
 
+<html><body>
+
+<h2>Search Results: </h2>
+<table>
+    <tr>
+        <th> First Name </th>
+        <th> Last Name </th>
+    </tr>
+    <c:forEach var="user" items="${users}">
+        <tr>
+            <td>${user.firstName} ${user.lastName}</td>
+        </tr>
+    </c:forEach>
+</table>
 </body>
 </html>
