@@ -30,7 +30,7 @@ public class SearchProduct extends HttpServlet {
         } else {
             req.setAttribute("products", genericDao.getAll());
         }
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/products.jsp");
         dispatcher.forward(req, resp);
     }
 }

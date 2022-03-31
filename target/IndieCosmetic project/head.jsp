@@ -24,4 +24,10 @@
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 
 
+    <script src="js/validator.js"></script>
+    <script src="js/datepicker.js"></script>
+
+
+
+
 </head>
