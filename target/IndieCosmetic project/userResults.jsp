@@ -17,13 +17,17 @@
         <th>FirstName</th>
         <th>LastName</th>
         <th>User Name</th>
-        \        </thead>
+        <th>Email</th>
+
+        </thead>
         <tbody>
         <c:forEach var="user" items="${users}">
             <tr>
                 <td>${user.firstName}</td>
                 <td>${user.lastName}</td>
                 <td>${user.userName}</td>
+                <td>${user.email}</td>
+
             </tr>
         </c:forEach>
         </tbody>
