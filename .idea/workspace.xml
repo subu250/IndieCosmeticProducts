@@ -16,10 +16,9 @@
   <component name="ChangeListManager">
     <list default="true" id="da4a2b1e-6e4f-43c1-a36d-0e4095c3c25a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userResults.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userResults.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/userResults.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/userResults.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -319,7 +318,7 @@
       <workItem from="1648076758176" duration="21907000" />
       <workItem from="1648489268775" duration="13650000" />
       <workItem from="1648681685202" duration="507000" />
-      <workItem from="1648683124177" duration="6723000" />
+      <workItem from="1648683124177" duration="11333000" />
     </task>
     <servers />
   </component>
