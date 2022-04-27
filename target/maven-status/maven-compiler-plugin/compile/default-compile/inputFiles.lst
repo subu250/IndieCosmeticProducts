@@ -9,6 +9,7 @@
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/persistence/GenericDao.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/controller/Auth.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/controller/SearchUser.java
+/Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/util/DaoFactory.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/auth/CognitoJWTParser.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/auth/TokenResponse.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/persistence/UserDao.java
@@ -16,4 +17,6 @@
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/controller/SignIn.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/controller/SearchProduct.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/controller/LogIn.java
+/Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/controller/ProductInfo.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/auth/KeysItem.java
+/Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/controller/ViewOrders.java

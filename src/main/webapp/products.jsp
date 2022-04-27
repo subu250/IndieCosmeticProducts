@@ -7,10 +7,34 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+    <title>Products</title>
+    <table class="table" id="productsTable">
+<thead>
+<th>Product Name</th>
+<th></th>
+<th></th>
+</thead>
+<tbody>
+<c:forEach var="product" items="${products}">
+    <form action="productIno" class="" method="post">
+        <tr>
+            <td>${product.name}</td>
+            <td><input type="hidden" class="" id="productID" name="productID" value="${product.id}"></td>
+            <td>
+                <button type="submit" name="submit" class="btn-small waves-effect waves-blue">View Product</button>
+            </td>
+        </tr>
+    </form>
+</c:forEach>
+</tbody>
+    </table>
 
-</body>
+    </div>
+    <div class="row center">
+        <a href="addTrip.jsp">
+            <button type="button" class="btn waves-effect waves-blue">Add Trip</button>
+        </a>
+    </div>
+    </div>
+    </body>
 </html>

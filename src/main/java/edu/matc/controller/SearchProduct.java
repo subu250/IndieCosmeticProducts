@@ -17,7 +17,7 @@ import java.io.IOException;
  * @author subu
  */
 @WebServlet(
-        urlPatterns = {"/searchItems"}
+        urlPatterns = {"/searchProducts"}
 )
 
 public class SearchProduct extends HttpServlet {
