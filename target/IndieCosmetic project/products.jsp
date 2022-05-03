@@ -16,12 +16,12 @@
 </thead>
 <tbody>
 <c:forEach var="product" items="${products}">
-    <form action="tripInfo" class="" method="post">
+    <form action="productIno" class="" method="post">
         <tr>
-            <td>${trip.name}</td>
-            <td><input type="hidden" class="" id="tripID" name="tripID" value="${trip.id}"></td>
+            <td>${product.name}</td>
+            <td><input type="hidden" class="" id="productID" name="productID" value="${product.id}"></td>
             <td>
-                <button type="submit" name="submit" class="btn-small waves-effect waves-blue">View</button>
+                <button type="submit" name="submit" class="btn-small waves-effect waves-blue">View Product</button>
             </td>
         </tr>
     </form>

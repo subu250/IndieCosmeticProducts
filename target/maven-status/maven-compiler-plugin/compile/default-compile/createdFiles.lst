@@ -19,4 +19,5 @@ edu/matc/persistence/UserDao.class
 edu/matc/auth/CognitoTokenHeader.class
 edu/matc/controller/SearchUser.class
 edu/matc/persistence/SessionFactoryProvider.class
+zipCode/Zipcodes.class
 edu/matc/util/PropertiesLoader.class

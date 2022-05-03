@@ -12,6 +12,7 @@
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/util/DaoFactory.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/auth/CognitoJWTParser.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/auth/TokenResponse.java
+/Users/subu/projects/student/IndieCosmeticProducts/src/main/java/zipCode/Zipcodes.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/persistence/UserDao.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/entity/User.java
 /Users/subu/projects/student/IndieCosmeticProducts/src/main/java/edu/matc/controller/SignIn.java

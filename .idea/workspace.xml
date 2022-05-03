@@ -15,7 +15,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da4a2b1e-6e4f-43c1-a36d-0e4095c3c25a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/api/ProductApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/api/ProductApiItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/api/ProductColorsItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zipCode/api/ZipCodeItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zipCode/api/ZipcodesItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/products.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +45,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -88,7 +112,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.16803761" />
     <property name="project.structure.side.proportion" value="0.22946173" />
-    <property name="settings.editor.selected.configurable" value="advanced.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -110,7 +134,7 @@
       <recent name="edu.matc.testUtils" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.75">
+  <component name="RunManager" selected="JUnit.ProductApiDaoTest.getProductApiResponseSuccess">
     <configuration name="OrderDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndieCosmeticProducts" />
       <extension name="coverage">
@@ -123,22 +147,6 @@
       <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.OrderDaoTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderDaoTest.getAllOrdersSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IndieCosmeticProducts" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.matc.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.OrderDaoTest" />
-      <option name="METHOD_NAME" value="getAllOrdersSuccess" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,7 +167,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderDaoTest.getByPropertyLikeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductApiDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndieCosmeticProducts" />
       <extension name="coverage">
         <pattern>
@@ -168,14 +176,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.OrderDaoTest" />
-      <option name="METHOD_NAME" value="getByPropertyLikeSuccess" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.ProductApiDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApiDaoTest.getProductApiResponseSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IndieCosmeticProducts" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.matc.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.ProductApiDaoTest" />
+      <option name="METHOD_NAME" value="getProductApiResponseSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ZipcodeDaoTest.getZipcodeResponseSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndieCosmeticProducts" />
       <extension name="coverage">
         <pattern>
@@ -184,8 +207,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UserDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.ZipcodeDaoTest" />
+      <option name="METHOD_NAME" value="getZipcodeResponseSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -286,20 +310,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserDaoTest" />
-      <item itemvalue="JUnit.OrderDaoTest.getAllOrdersSuccess" />
       <item itemvalue="JUnit.OrderDaoTest" />
-      <item itemvalue="JUnit.OrderDaoTest.getByPropertyLikeSuccess" />
       <item itemvalue="JUnit.OrderDaoTest.getByPropertyEqualSuccess" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.75" />
+      <item itemvalue="JUnit.ZipcodeDaoTest.getZipcodeResponseSuccess" />
+      <item itemvalue="JUnit.ProductApiDaoTest.getProductApiResponseSuccess" />
+      <item itemvalue="JUnit.ProductApiDaoTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductApiDaoTest.getProductApiResponseSuccess" />
+        <item itemvalue="JUnit.ProductApiDaoTest" />
+        <item itemvalue="JUnit.ZipcodeDaoTest.getZipcodeResponseSuccess" />
         <item itemvalue="JUnit.OrderDaoTest" />
         <item itemvalue="JUnit.OrderDaoTest.getByPropertyEqualSuccess" />
-        <item itemvalue="JUnit.OrderDaoTest.getAllOrdersSuccess" />
-        <item itemvalue="JUnit.OrderDaoTest.getByPropertyLikeSuccess" />
-        <item itemvalue="JUnit.UserDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -324,7 +348,8 @@
       <workItem from="1649168610758" duration="301000" />
       <workItem from="1649169747770" duration="1152000" />
       <workItem from="1649175095487" duration="5687000" />
-      <workItem from="1649630938130" duration="12641000" />
+      <workItem from="1649630938130" duration="21567000" />
+      <workItem from="1651544822152" duration="9637000" />
     </task>
     <servers />
   </component>

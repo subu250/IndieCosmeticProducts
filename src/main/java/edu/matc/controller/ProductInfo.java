@@ -3,7 +3,6 @@ import edu.matc.entity.Product;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -46,5 +45,5 @@ public class ProductInfo extends HttpServlet {
         }
     }
 
+}
 
-    }

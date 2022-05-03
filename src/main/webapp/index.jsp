@@ -1,7 +1,9 @@
 <%@include file="head.jsp"%>
 <%@include file="taglib.jsp"%>
 <html>
-<title>Welcome</title>
+<title>
+    Artisan Formulated JAVA Skin Care with Caffeine and Antioxidants &ndash; JAVA SKIN CARE
+</title>
 <body class="container">
 <div class="card-panel">
     <div class="section center">
@@ -13,7 +15,8 @@
     <c:when test="${empty userName}">
             <a href="logIn">
                 <button type="button" class="btn waves-effect waves-blue darken-2">Log in</button>
-    </c:when>
+
+            </c:when>
     <c:otherwise>
         <h3>Welcome ${userName}</h3>
                 <form action="searchProducts" class="" method="post">
