@@ -14,25 +14,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da4a2b1e-6e4f-43c1-a36d-0e4095c3c25a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/product/api/ProductApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/product/api/ProductApiItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/product/api/ProductColorsItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zipCode/api/ZipCodeItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zipCode/api/ZipcodesItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="da4a2b1e-6e4f-43c1-a36d-0e4095c3c25a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -349,7 +331,7 @@
       <workItem from="1649169747770" duration="1152000" />
       <workItem from="1649175095487" duration="5687000" />
       <workItem from="1649630938130" duration="21567000" />
-      <workItem from="1651544822152" duration="9637000" />
+      <workItem from="1651544822152" duration="10048000" />
     </task>
     <servers />
   </component>
