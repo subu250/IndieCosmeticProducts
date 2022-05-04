@@ -31,8 +31,8 @@
 
     </div>
     <div class="row center">
-        <a href="addTrip.jsp">
-            <button type="button" class="btn waves-effect waves-blue">Add Trip</button>
+        <a href="addProduct.jsp">
+            <button type="button" class="btn waves-effect waves-blue">Add Product</button>
         </a>
     </div>
     </div>

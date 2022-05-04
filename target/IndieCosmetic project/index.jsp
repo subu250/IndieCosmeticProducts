@@ -1,9 +1,6 @@
 <%@include file="head.jsp"%>
 <%@include file="taglib.jsp"%>
 <html>
-<title>
-    Artisan Formulated JAVA Skin Care with Caffeine and Antioxidants &ndash; JAVA SKIN CARE
-</title>
 <body class="container">
 <div class="card-panel">
     <div class="section center">

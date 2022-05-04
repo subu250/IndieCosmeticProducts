@@ -34,12 +34,17 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
-    private int id;
+    @Column(name= "user_id")
+    private int userId;
 
 
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Order> orders = new HashSet<>();
+    private Set<Product> products = new HashSet<>();
+
+//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+//    private Set<Order> orders = new HashSet<>();
+
 
     /**
      * Instantiates a new User.
@@ -133,22 +138,22 @@ public class User {
 
 
     /**
-     * Gets id.
+     * Gets userId.
      *
-     * @return the id
+     * @return the userId
      */
-    public int getId() {
-        return id;
+    public int getUserId() {
+        return userId;
     }
 
 
     /**
-     * Sets id.
+     * Sets userId.
      *
-     * @param id the id
+     * @param userId the userId
      */
-    public void setId(int id) {
-        this.id = id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
 
@@ -171,43 +176,64 @@ public class User {
     }
 
 
+//    /**
+//     * Gets orders.
+//     *
+//     * @return the orders
+//     */
+//    public Set<Order> getOrders() {
+//        return orders;
+//    }
+//
+//    /**
+//     * Sets orders.
+//     *
+//     * @param orders the orders
+//     */
+//    public void setOrders(Set<Order> orders) {
+//        this.orders = orders;
+//    }
+
+//    /**
+//     * Add order.
+//     *
+//     * @param order the order
+//     */
+//    public void addOrder(Order order) {
+//        orders.add(order);
+//        order.setUser(this);
+//    }
+//
+//    /**
+//     * Remove order.
+//     *
+//     * @param order the order
+//     */
+//    public void removeOrder(Order order) {
+//        orders.remove(order);
+//        order.setUser(null);
+//    }
+
     /**
-     * Gets orders.
+     * Add product.
      *
-     * @return the orders
+     * @param product the product
      */
-    public Set<Order> getOrders() {
-        return orders;
+    public void addProduct(Product product) {
+        products.add(product);
+        product.setUser(this);
     }
 
     /**
-     * Sets orders.
+     * Remove product.
      *
-     * @param orders the orders
+     * @param product the product
      */
-    public void setOrders(Set<Order> orders) {
-        this.orders = orders;
+    public void removeProduct(Product product) {
+        products.remove(product);
+        product.setUser(null);
     }
 
-    /**
-     * Add order.
-     *
-     * @param order the order
-     */
-    public void addOrder(Order order) {
-        orders.add(order);
-        order.setUser(this);
-    }
-
-    /**
-     * Remove order.
-     *
-     * @param order the order
-     */
-    public void removeOrder(Order order) {
-        orders.remove(order);
-        order.setUser(null);
-    }
 
     @Override
     public String toString() {
@@ -217,7 +243,7 @@ public class User {
                 ", userName='" + userName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", id=" + id +
+                ", userid=" + userId +
                 '}';
     }
 }

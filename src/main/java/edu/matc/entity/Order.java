@@ -1,103 +1,47 @@
 package edu.matc.entity;
 
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
+
 /**
- * The type Order.
+ * A class to represent Order.
  */
 @Entity(name = "Order")
-@Table(name = "orders")
+@Table(name = "order")
+@Getter @Setter @NoArgsConstructor
+@ToString @EqualsAndHashCode
 public class Order {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator(name = "native", strategy = "native")
-    private int id;
-
-    private String description;
+    @ManyToOne
+    @JoinColumn(name = "order_number", foreignKey = @ForeignKey(name = "order_number"))
+    private WholeSale wholeSale;
 
     @ManyToOne
-    private User user;
+    @JoinColumn(name = "order_id", foreignKey = @ForeignKey(name = "order_id"))
+    private Product product;
+
+    @Column(name = "quantity")
+    private int quantity;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator="native")
+    @GenericGenerator(name = "native",strategy = "native")
+    @Column(name = "id")
+    private int id;
+
 
     /**
      * Instantiates a new Order.
+     * @param quantity   the quantity
+     * @param product    the product
+     * @param wholeSale    the offer
      */
-    public Order() {
+    public Order(Product product,  int quantity, WholeSale wholeSale) {
+        this.quantity = quantity;
+        this.product = product;
+        this.wholeSale = wholeSale;
     }
 
-    /**
-     * Instantiates a new Order.
-     *
-     * @param description the description
-     * @param user        the user
-     */
-    public Order(String description, User user ) {
-        this.user = user;
-        this.description = description;
-    }
-
-    /**
-     * Gets id.
-     *
-     * @return the id
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * Sets id.
-     *
-     * @param id the id
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    /**
-     * Gets description.
-     *
-     * @return the description
-     */
-    public String getDescription() {
-        return description;
-    }
-
-    /**
-     * Sets description.
-     *
-     * @param description the description
-     */
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    /**
-     * Gets user.
-     *
-     * @return the user
-     */
-    public User getUser() {
-        return user;
-    }
-
-    /**
-     * Sets user.
-     *
-     * @param user the user
-     */
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    @Override
-    public String toString() {
-        return "Order{" +
-                "id=" + id +
-                ", description='" + description + '\'' +
-                ", user=" + user +
-                '}';
-    }
 }

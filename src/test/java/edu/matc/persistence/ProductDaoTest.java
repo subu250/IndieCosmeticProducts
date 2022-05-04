@@ -8,7 +8,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
@@ -69,57 +68,58 @@ class ProductDaoTest {
     /**
      * Verify successful insert of a product
      */
-  //  @Test
-    void insertSuccess() {
+//  //  @Test
+//    void insertSuccess() {
+//
+//        UserDao userDao = new UserDao();
+//        User user = userDao.getById(1);
+//        // Product newProduct = new Product("Cerave", user);
+//        // user.addOrder(newOrder);
+//        // int id = productDao.insert(newProduct);
+////        assertNotEquals(0, id);
+////
+////        Product insertedProduct = (Product) productDao.getById(user);
+////        assertEquals("ABC", insertedProduct.getBrand());
+////        assertNotNull(insertedProduct.getUser());
+////        assertEquals("Rose", insertedProduct.getUser().getFirstName());
+////
+//
+//
+//        ]
+        /**
+         * Verify successful delete of product
+         */
+        //  @Test
+        void deleteSuccess () {
+            Product delete = (Product) productDao.getById(3);
 
-        UserDao userDao = new UserDao();
-        User user = userDao.getById(1);
-        Product newProduct = new Product("Cerave", user);
-       // user.addOrder(newOrder);
-        int id = productDao.insert(newProduct);
-        assertNotEquals(0, id);
+            assertNull(productDao.getById(3));
+        }
 
-        Product insertedProduct = (Product) productDao.getById(id);
-        assertEquals("ABC", insertedProduct.getBrand());
-        assertNotNull(insertedProduct.getUser());
-        assertEquals("Rose", insertedProduct.getUser().getFirstName());
+        /**
+         * Verify successful update of product
+         */
+        //  @Test
+        void updateSuccess () {
+            String category = "Cosmetic";
+
+            Product productToUpdate = (Product) productDao.getById(3);
+            productToUpdate.setCategory(category);
+            productDao.saveOrUpdate(productToUpdate);
+            Product retrievedProduct = (Product) productDao.getById(3);
+            assertEquals(category, retrievedProduct.getBrand());
+        }
+
+        /**
+         * Verify successful get by property (equal match)
+         */
+        //   @Test
+        void getByPropertyEqualSuccess () {
+
+            List<Product> products = productDao.getByPropertyEqual("brand", "b");
+            assertEquals(1, products.size());
+            assertEquals(2, products.get(0).getBrand());
+        }
     }
 
 
-    /**
-     * Verify successful delete of product
-     */
-  //  @Test
-    void deleteSuccess() {
-        Product delete = (Product) productDao.getById(3);
-
-        assertNull(productDao.getById(3));
-    }
-
-    /**
-     * Verify successful update of product
-     */
-  //  @Test
-    void updateSuccess() {
-        String brand = "Cerave";
-
-        Product productToUpdate = (Product) productDao.getById(3);
-        productToUpdate.setBrand(brand);
-        productDao.saveOrUpdate(productToUpdate);
-        Product retrievedProduct = (Product) productDao.getById(3);
-        assertEquals(brand, retrievedProduct.getBrand());
-    }
-
-    /**
-     * Verify successful get by property (equal match)
-     */
- //   @Test
-    void getByPropertyEqualSuccess() {
-
-        List<Product> products = productDao.getByPropertyEqual("brand", "b");
-        assertEquals(1, products.size());
-        assertEquals(2, products.get(0).getId());
-    }
-
-
-}

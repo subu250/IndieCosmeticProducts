@@ -2,16 +2,19 @@ edu/matc/entity/Product.class
 edu/matc/auth/TokenResponse.class
 edu/matc/controller/SearchProduct.class
 edu/matc/controller/Auth.class
-edu/matc/entity/Location.class
+edu/matc/entity/WholeSale.class
 edu/matc/persistence/GenericDao.class
 edu/matc/entity/User.class
+product/api/ProductColorsItem.class
 edu/matc/controller/LogIn.class
 edu/matc/auth/Keys.class
 edu/matc/auth/KeysItem.class
+product/api/ProductApi.class
 edu/matc/entity/Order.class
+product/api/ProductApiItem.class
+edu/matc/persistence/ProductApiDao.class
 edu/matc/controller/SignIn.class
 edu/matc/util/DaoFactory.class
-edu/matc/entity/Offer.class
 edu/matc/controller/ProductInfo.class
 edu/matc/controller/ViewOrders.class
 edu/matc/auth/CognitoJWTParser.class
@@ -19,5 +22,4 @@ edu/matc/persistence/UserDao.class
 edu/matc/auth/CognitoTokenHeader.class
 edu/matc/controller/SearchUser.class
 edu/matc/persistence/SessionFactoryProvider.class
-zipCode/Zipcodes.class
 edu/matc/util/PropertiesLoader.class
