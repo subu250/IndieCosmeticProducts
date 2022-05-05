@@ -21,5 +21,6 @@
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/util/DaoFactory.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/auth/CognitoTokenHeader.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/util/PropertiesLoader.java
+/Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/entity/Manufacturer.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/Auth.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/LogIn.java

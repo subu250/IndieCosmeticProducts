@@ -42,19 +42,19 @@ class UserDaoTest {
     /**
      * Verify successful retrieval of a User
      */
- //   @Test
+  //  @Test
     void getByIdSuccess() {
         User retrievedUser = (User) userDao.getById(1);
         assertNotNull(retrievedUser);
         assertEquals("Mack", retrievedUser.getLastName());
-        //assertTrue(expectedUser.equals(actualUser));
+      //  assertTrue(expectedUser.equals(actualUser));
     }
 
     /**
      * Verify successful insert of User
      */
 
-  //  @Test
+  //@Test
     void insertSuccess() {
 
         User newUser = new User("Sara", "stone", "intstone", "Userone@gmail.com0", "user789");
@@ -90,7 +90,7 @@ class UserDaoTest {
     /**
      * Verify successful retrieval of all Users
      */
- //   @Test
+  // @Test
     void getAllSuccess() {
 
         List<User> users = userDao.getAll();

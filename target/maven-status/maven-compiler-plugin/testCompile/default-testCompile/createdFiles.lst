@@ -1,3 +1,4 @@
+edu/matc/persistence/ManufacturerDaoTest.class
 edu/matc/persistence/OrderDaoTest.class
 edu/matc/persistence/UserDaoTest.class
 edu/matc/testUtils/Database.class

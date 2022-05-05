@@ -22,6 +22,7 @@
 
         <mapping class="edu.matc.entity.User"/>
         <mapping class="edu.matc.entity.Product"/>
+        <mapping class="edu.matc.entity.Manufacturer"/>
 
     </session-factory>
 

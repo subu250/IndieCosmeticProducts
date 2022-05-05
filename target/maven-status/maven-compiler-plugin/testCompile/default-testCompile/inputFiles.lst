@@ -2,4 +2,5 @@
 /Users/subu/projects/IndieCosmeticProducts/src/test/java/edu/matc/persistence/ProductApiDaoTest.java
 /Users/subu/projects/IndieCosmeticProducts/src/test/java/edu/matc/persistence/OrderDaoTest.java
 /Users/subu/projects/IndieCosmeticProducts/src/test/java/edu/matc/testUtils/Database.java
+/Users/subu/projects/IndieCosmeticProducts/src/test/java/edu/matc/persistence/ManufacturerDaoTest.java
 /Users/subu/projects/IndieCosmeticProducts/src/test/java/edu/matc/persistence/UserDaoTest.java

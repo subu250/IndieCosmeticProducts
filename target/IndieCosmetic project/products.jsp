@@ -9,6 +9,7 @@
 <html>
     <title>Products</title>
     <table class="table" id="productsTable">
+
 <thead>
 <th>Product Name</th>
 <th></th>

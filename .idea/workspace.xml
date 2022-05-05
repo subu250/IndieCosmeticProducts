@@ -15,65 +15,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da4a2b1e-6e4f-43c1-a36d-0e4095c3c25a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/WholeSale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/901778cb-923e-485b-996e-f28faf1b8872.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/901778cb-923e-485b-996e-f28faf1b8872.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Location.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Offer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dump.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndieCosmeticProducts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IndieCosmeticProducts.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/ProductApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/ProductApiDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/productInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/productInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/OrderDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/OrderDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/ProductDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/ProductDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/ProductApiDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/ProductApiDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/cleandb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleandb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/dump.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Offer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/persistence/ProductApiDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/persistence/ProductApiDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/zipCode/Zipcodes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/productInfo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dump.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Offer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/ProductApiDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/persistence/ProductApiDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/ZipCodeDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/product/api/ProductApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/product/api/ProductApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zipCode/api/CityStatesItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zipCode/api/ZipCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zipCode/api/ZipCodeItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zipCode/api/ZipcodesItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.ProductApiDaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.ProductApiDaoTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.ProductApiDaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.ProductApiDaoTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/cleandb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cleandb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/OrderDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/OrderDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/ProductDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/ProductDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/ZipcodeDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/ProductApiDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/ProductApiDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +63,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -154,7 +130,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.16803761" />
     <property name="project.structure.side.proportion" value="0.22946173" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JPA/Hibernate QL" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -165,8 +141,8 @@
       <recent name="$PROJECT_DIR$/DesignDocuments/wireframes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/DesignDocuments" />
       <recent name="$PROJECT_DIR$/DesignDocuments/wireframes" />
@@ -179,7 +155,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.75">
-    <configuration name="OrderDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManufacturerDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndieCosmeticProducts" />
       <extension name="coverage">
         <pattern>
@@ -188,14 +164,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.OrderDaoTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.ManufacturerDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderDaoTest.getByPropertyEqualSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManufacturerDaoTest.getManufactureResponseSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndieCosmeticProducts" />
       <extension name="coverage">
         <pattern>
@@ -204,8 +179,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.OrderDaoTest" />
-      <option name="METHOD_NAME" value="getByPropertyEqualSuccess" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.ManufacturerDaoTest" />
+      <option name="METHOD_NAME" value="getManufactureResponseSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManufacturerDaoTest.retrieveMfgById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IndieCosmeticProducts" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.matc.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.ManufacturerDaoTest" />
+      <option name="METHOD_NAME" value="retrieveMfgById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -226,7 +217,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductApiDaoTest.getProductApiResponseSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoTest.insertSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndieCosmeticProducts" />
       <extension name="coverage">
         <pattern>
@@ -235,24 +226,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.ProductApiDaoTest" />
-      <option name="METHOD_NAME" value="getProductApiResponseSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ZipcodeDaoTest.getZipcodeResponseSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IndieCosmeticProducts" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.matc.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.matc.persistence" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.ZipcodeDaoTest" />
-      <option name="METHOD_NAME" value="getZipcodeResponseSuccess" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.persistence.UserDaoTest" />
+      <option name="METHOD_NAME" value="insertSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -354,20 +329,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.OrderDaoTest" />
-      <item itemvalue="JUnit.OrderDaoTest.getByPropertyEqualSuccess" />
-      <item itemvalue="JUnit.ZipcodeDaoTest.getZipcodeResponseSuccess" />
-      <item itemvalue="JUnit.ProductApiDaoTest.getProductApiResponseSuccess" />
       <item itemvalue="JUnit.ProductApiDaoTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.75" />
+      <item itemvalue="JUnit.UserDaoTest.insertSuccess" />
+      <item itemvalue="JUnit.ManufacturerDaoTest.getManufactureResponseSuccess" />
+      <item itemvalue="JUnit.ManufacturerDaoTest" />
+      <item itemvalue="JUnit.ManufacturerDaoTest.retrieveMfgById" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductApiDaoTest.getProductApiResponseSuccess" />
+        <item itemvalue="JUnit.ManufacturerDaoTest" />
+        <item itemvalue="JUnit.ManufacturerDaoTest.retrieveMfgById" />
+        <item itemvalue="JUnit.UserDaoTest.insertSuccess" />
+        <item itemvalue="JUnit.ManufacturerDaoTest.getManufactureResponseSuccess" />
         <item itemvalue="JUnit.ProductApiDaoTest" />
-        <item itemvalue="JUnit.ZipcodeDaoTest.getZipcodeResponseSuccess" />
-        <item itemvalue="JUnit.OrderDaoTest" />
-        <item itemvalue="JUnit.OrderDaoTest.getByPropertyEqualSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +369,8 @@
       <workItem from="1649175095487" duration="5687000" />
       <workItem from="1649630938130" duration="21567000" />
       <workItem from="1651544822152" duration="10048000" />
-      <workItem from="1651623994508" duration="15196000" />
+      <workItem from="1651623994508" duration="21766000" />
+      <workItem from="1651693449103" duration="9524000" />
     </task>
     <servers />
   </component>
@@ -422,6 +398,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IndieCosmeticProducts$UserDaoTest.ic" NAME="UserDaoTest Coverage Results" MODIFIED="1644768052414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

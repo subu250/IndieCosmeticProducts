@@ -1,6 +1,7 @@
 edu/matc/entity/Product.class
 edu/matc/auth/TokenResponse.class
 edu/matc/controller/SearchProduct.class
+edu/matc/entity/Manufacturer.class
 edu/matc/controller/Auth.class
 edu/matc/entity/WholeSale.class
 edu/matc/persistence/GenericDao.class
