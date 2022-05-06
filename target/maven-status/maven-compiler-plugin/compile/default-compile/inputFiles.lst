@@ -3,11 +3,11 @@
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/SearchProduct.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/entity/WholeSale.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/persistence/ProductApiDao.java
-/Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/SearchUser.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/auth/Keys.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/SignIn.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/entity/User.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/auth/CognitoJWTParser.java
+/Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/SearchUsers.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/product/api/ProductColorsItem.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/auth/KeysItem.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/persistence/UserDao.java

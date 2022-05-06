@@ -12,13 +12,12 @@
     <c:when test="${empty userName}">
             <a href="logIn">
                 <button type="button" class="btn waves-effect waves-blue darken-2">Log in</button>
-
             </c:when>
     <c:otherwise>
         <h3>Welcome ${userName}</h3>
-                <form action="searchProducts" class="" method="post">
+                <form action="productInfo" class="" method="post">
                     <input type="hidden" class="" id="userName" name="userName" value="${userName}">
-                    <button type="submit" name="submit" class="btn waves-effect waves-blue darken-2">Search Products
+                    <button type="submit" name="submit" class="btn waves-effect waves-blue darken-2">Products Information
                     </button>
     </c:otherwise>
 </c:choose>

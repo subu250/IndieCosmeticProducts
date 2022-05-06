@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.matc.persistence.ProductApiDaoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.985 sec - in edu.matc.persistence.ProductApiDaoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.908 sec - in edu.matc.persistence.ProductApiDaoTest

@@ -4,27 +4,28 @@
 
 <script type="text/javascript" class="init">
     $(document).ready( function () {
-        $('#manufactureTable').DataTable();
+        $('#manufacturerTable').Data();
     } );
 </script>
+
 <html>
 <body>
 
 <div class="container-fluid">
     <h2>Manufacture Results: </h2>
-    <table id="manufactureTable" class="display" cellspacing="0" width="100%">
+    <table id="manufacturerTable" class="display" cellspacing="0" width="100%">
         <thead>
-        <th>ManufactureId</th>
-        <th>ManufactureName</th>
-        <th>ManufactureCode</th>
+        <th>ManufacturerId</th>
+        <th>ManufacturerName</th>
+        <th>ManufacturerCode</th>
 
         </thead>
         <tbody>
-        <c:forEach var="manufacture" items="${manufacture}">
+        <c:forEach var="manufacturer" items="${manufacturers}">
             <tr>
-                <td>${manufacture.manufactureId}</td>
-                <td>${manufacture.manufactureName}</td>
-                <td>${manufacture.manufactureCode}</td>
+                <td>${manufacturer.manufacturerId}</td>
+                <td>${manufacturer.manufacturerName}</td>
+                <td>${manufacturer.manufacturerCode}</td>
 
             </tr>
         </c:forEach>
@@ -32,5 +33,10 @@
     </table>
 </div>
 
+<script>
+    $(document).ready(function(){
+        $('#lightgallery').lightingColor();
+    });
+</script>
 </body>
 </html>

@@ -20,7 +20,6 @@ import java.io.IOException;
         urlPatterns = {"/productInfo"}
 )
 
-
 public class ProductInfo extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -28,7 +27,7 @@ public class ProductInfo extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao genericDao = new GenericDao(Product.class);
-        int id = (Integer.parseInt(req.getParameter("productID")));
+        int id = (Integer.parseInt(req.getParameter("brand")));
         String page = "/productInfo.jsp";
         try {
             Product productInfo = (Product) genericDao.getById(id);

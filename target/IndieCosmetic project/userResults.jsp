@@ -3,17 +3,17 @@
 <%@include file="head.jsp"%>
 
 <script type="text/javascript" class="init">
-    $(document).ready( function () {
+    $(document).ready(function () {
         $('#userTable').DataTable();
-    } );
+    });
 </script>
 <html>
 <body>
-
 <div class="container-fluid">
     <h2>Search Results: </h2>
     <table id="userTable" class="display" cellspacing="0" width="100%">
         <thead>
+        <th>UserId</th>
         <th>FirstName</th>
         <th>LastName</th>
         <th>User Name</th>
@@ -23,11 +23,11 @@
         <tbody>
         <c:forEach var="user" items="${users}">
             <tr>
+                <td>${user.userId}</td>
                 <td>${user.firstName}</td>
                 <td>${user.lastName}</td>
                 <td>${user.userName}</td>
                 <td>${user.email}</td>
-
             </tr>
         </c:forEach>
         </tbody>
@@ -36,3 +36,4 @@
 
 </body>
 </html>
+

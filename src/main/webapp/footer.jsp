@@ -10,7 +10,6 @@
 
 
         &copy; Copyright
-
-        All Natural.
+        All Natural- Design
     </div>
 </div>
