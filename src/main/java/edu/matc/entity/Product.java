@@ -3,8 +3,6 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 
 /**
@@ -34,8 +32,8 @@ public class Product {
     @Column(name = "product_id")
     private int productId;
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Order> orders = new HashSet<>();
+//    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+//  //  private Set<Order> orders = new HashSet<>();
 
     /**
      * Instantiates a new Product.
@@ -133,24 +131,24 @@ public class Product {
         this.user = user;
     }
 
-    /**
-     * Add order.
-     *
-     * @param order the order
-     */
-    public void addOrder(Order order) {
-        orders.add(order);
-        order.setProduct(this);
-    }
-
-    /**
-     * Remove orderItem.
-     *
-     * @param order the orderItem
-     */
-    public void removeOrderItem(Order order) {
-        orders.remove(order);
-        order.setProduct(null);
-    }
+//    /**
+//     * Add order.
+//     *
+//     * @param order the order
+//     */
+//    public void addOrder(Order order) {
+//        orders.add(order);
+//        order.setProduct(this);
+//    }
+//
+//    /**
+//     * Remove orderItem.
+//     *
+//     * @param order the orderItem
+//     */
+//    public void removeOrderItem(Order order) {
+//        orders.remove(order);
+//        order.setProduct(null);
+//    }
 
 }

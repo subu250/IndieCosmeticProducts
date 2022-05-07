@@ -36,7 +36,7 @@ public class Order {
      * Instantiates a new Order.
      * @param quantity   the quantity
      * @param product    the product
-     * @param wholeSale    the offer
+     * @param wholeSale    the wholeSale
      */
     public Order(Product product,  int quantity, WholeSale wholeSale) {
         this.quantity = quantity;

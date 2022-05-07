@@ -14,6 +14,7 @@ edu/matc/auth/KeysItem.class
 product/api/ProductApi.class
 edu/matc/entity/Order.class
 product/api/ProductApiItem.class
+edu/matc/controller/Manufacture.class
 edu/matc/persistence/ProductApiDao.class
 edu/matc/controller/SignIn.class
 edu/matc/util/DaoFactory.class

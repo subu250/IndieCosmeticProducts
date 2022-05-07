@@ -5,15 +5,12 @@ import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
 
 /**
  * The type Offer.
  */
-@Entity(name = "Offer")
-@Table(name = "offer")
+//@Entity(name = "Offer")
+//@Table(name = "offer")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -30,8 +27,8 @@ public class WholeSale {
     @Column(name = "order_number")
     private int orderNumber;
 
-    @OneToMany(mappedBy = "order_number", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @ToString.Exclude @EqualsAndHashCode.Exclude private Set<Order> orders = new HashSet<>();
+//    @OneToMany(mappedBy = "order_number", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+//    @ToString.Exclude @EqualsAndHashCode.Exclude private Set<Order> orders = new HashSet<>();
 
     /**
      * Instantiates a new wholesale.
@@ -61,23 +58,23 @@ public class WholeSale {
     }
 
 
-    /**
-     * Add order.
-     *
-     * @param order the order
-     */
-    public void addOrder(Order order) {
-        orders.add(order);
-        order.setWholeSale(this);
-    }
-
-    /**
-     * Remove order.
-     *
-     * @param order the order
-     */
-    public void removeOrder(Order order) {
-        orders.remove(order);
-        order.setWholeSale(null);
-    }
+//    /**
+//     * Add order.
+//     *
+//     * @param order the order
+//     */
+//    public void addOrder(Order order) {
+//        orders.add(order);
+//        order.setWholeSale(this);
+//    }
+//
+//    /**
+//     * Remove order.
+//     *
+//     * @param order the order
+//     */
+//    public void removeOrder(Order order) {
+//        orders.remove(order);
+//        order.setWholeSale(null);
+//    }
 }

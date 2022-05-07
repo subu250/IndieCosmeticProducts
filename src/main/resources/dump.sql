@@ -41,12 +41,12 @@ CREATE TABLE `user` (
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 
-INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (1,'Sam','Toyne','jscoyne','Userone@gmail.com0','user123');
-INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (2,'Fred','Hensen','fhensen','Userone@gmail.com0','user123');
-INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (3,'Rose','Roy','rroy','Userone@gmail.com0','user123');
-INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (4,'Tom','Klien','tklien','Userone@gmail.com0','user123');
-INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (5,'Karen','Mack','kmack','Userone@gmail.com0','user123');
-INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (6,'Shean','Tillman','stillman','Userone@gmail.com0','user123');
+INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (1,'Sam','Toyne','jscoyne','Userone@gmail.com0','user123');
+INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (2,'Fred','Hensen','fhensen','Userone@gmail.com0','user123');
+INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (3,'Rose','Roy','rroy','Userone@gmail.com0','user123');
+INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (4,'Tom','Klien','tklien','Userone@gmail.com0','user123');
+INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (5,'Karen','Mack','kmack','Userone@gmail.com0','user123');
+INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (6,'Shean','Tillman','stillman','Userone@gmail.com0','user123');
 
 
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;

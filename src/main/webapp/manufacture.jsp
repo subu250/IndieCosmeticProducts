@@ -4,7 +4,7 @@
 
 <script type="text/javascript" class="init">
     $(document).ready( function () {
-        $('#manufacturerTable').Data();
+        $('#manufacturerTable').DataTable();
     } );
 </script>
 

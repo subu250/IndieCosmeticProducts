@@ -6,10 +6,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+
 import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class UserDaoTest {
 
@@ -54,15 +54,15 @@ class UserDaoTest {
      * Verify successful insert of User
      */
 
-  //@Test
-    void insertSuccess() {
-
-        User newUser = new User("Sara", "stone", "intstone", "Userone@gmail.com0", "user789");
-        int id = userDao.insert(newUser);
-        assertNotEquals(0, id);
-        User insertedUser = (User)userDao.getById(id);
-        assertEquals("Sara", insertedUser.getFirstName());
-    }
+//  //@Test
+//    void insertSuccess() {
+//
+//        User newUser = new User("Sara", "stone", "intstone", "Userone@gmail.com0", "user789");
+//        int id = userDao.insert(newUser);
+//        assertNotEquals(0, id);
+//        User insertedUser = (User)userDao.getById(id);
+//        assertEquals("Sara", insertedUser.getFirstName());
+//    }
 
     /**
      * Verify successful delete of User

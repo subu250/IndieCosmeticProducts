@@ -57,18 +57,7 @@ public class UserDao {
         return users;
     }
 
-    /**
-     * Gets a user by id
-     *
-     * @param id users id to search by
-     * @return a user
-     */
-    public User getById(int id) {
-        Session session = sessionFactory.openSession();
-        User user = session.get(User.class, id);
-        session.close();
-        return user;
-    }
+
 
     /**
      * update user

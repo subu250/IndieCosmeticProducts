@@ -3,9 +3,9 @@
 <%@include file="head.jsp"%>
 
 <script type="text/javascript" class="init">
-    $(document).ready(function () {
-        $('#userTable').DataTable()
-    });
+    $(document).ready( function () {
+        $('#userTable').DataTable();
+    } );
 </script>
 <html>
 <body>

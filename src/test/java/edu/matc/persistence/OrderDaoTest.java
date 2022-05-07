@@ -7,11 +7,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 /**
  * The type Order dao test.
@@ -73,7 +73,7 @@ class OrderDaoTest {
     void insertSuccess() {
 
         UserDao userDao = new UserDao();
-        User user = userDao.getById(1);
+//        User user = userDao.getById(1);
        // Order newOrder = new Order("Cerave", user);
       //  user.addOrder(newOrder);
 
