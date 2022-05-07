@@ -1,0 +1,11 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    padding-top: 70px;
+}
+
+button {
+    padding: 5px;
+}

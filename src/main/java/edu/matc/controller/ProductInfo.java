@@ -27,7 +27,7 @@ public class ProductInfo extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao genericDao = new GenericDao(Product.class);
-        int id = (Integer.parseInt(req.getParameter("brand")));
+        int id = (Integer.parseInt(req.getParameter("id")));
         String page = "/productInfo.jsp";
         try {
             Product productInfo = (Product) genericDao.getById(id);

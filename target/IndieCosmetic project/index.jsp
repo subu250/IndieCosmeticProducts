@@ -15,9 +15,9 @@
             </c:when>
     <c:otherwise>
         <h3>Welcome ${userName}</h3>
-                <form action="searchUser" class="form-inline">
+                <form action="productInfo" class="" method="post">
                     <input type="hidden" class="" id="userName" name="userName" value="${userName}">
-                    <button type="submit" name="submit" class="btn waves-effect waves-blue darken-2">View all users
+                    <button type="submit" name="submit" class="btn waves-effect waves-blue darken-2">View Products
                     </button>
     </c:otherwise>
 </c:choose>

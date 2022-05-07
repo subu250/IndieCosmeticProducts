@@ -14,10 +14,10 @@ import java.io.IOException;
 
 public class ProductApiDao {
 
-   // private final Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
-     * Get city response products response item [ ].
+     * Get products response productsitem [ ].
      *
      * @param brand  the brand
      * @param price the price
@@ -35,7 +35,7 @@ public class ProductApiDao {
             productApiResponse = mapper.readValue(response, ProductApiItem[].class);
 
         } catch (JsonProcessingException e) {
-           // logger.error("JsonProcessingException" + e);
+           logger.error("JsonProcessingException" + e);
         }
         return productApiResponse ;
     }

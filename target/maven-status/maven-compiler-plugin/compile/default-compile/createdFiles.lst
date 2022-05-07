@@ -13,6 +13,7 @@ edu/matc/auth/Keys.class
 edu/matc/auth/KeysItem.class
 product/api/ProductApi.class
 edu/matc/entity/Order.class
+edu/matc/controller/ProductApi.class
 product/api/ProductApiItem.class
 edu/matc/controller/Manufacture.class
 edu/matc/persistence/ProductApiDao.class

@@ -14,9 +14,9 @@ import javax.persistence.*;
 @Getter @Setter @NoArgsConstructor
 @ToString @EqualsAndHashCode
 public class Order {
-    @ManyToOne
+    //@ManyToOne
     @JoinColumn(name = "order_number", foreignKey = @ForeignKey(name = "order_number"))
-    private WholeSale wholeSale;
+    //private WholeSale wholeSale;
 
     @ManyToOne
     @JoinColumn(name = "order_id", foreignKey = @ForeignKey(name = "order_id"))
@@ -41,7 +41,7 @@ public class Order {
     public Order(Product product,  int quantity, WholeSale wholeSale) {
         this.quantity = quantity;
         this.product = product;
-        this.wholeSale = wholeSale;
+       // this.wholeSale = wholeSale;
     }
 
 }
