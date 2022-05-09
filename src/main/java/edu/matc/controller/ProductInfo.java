@@ -1,8 +1,10 @@
 package edu.matc.controller;
+
 import edu.matc.entity.Product;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -31,8 +33,14 @@ public class ProductInfo extends HttpServlet {
         String page = "/productInfo.jsp";
         try {
             Product productInfo = (Product) genericDao.getById(id);
+          // List<Manufacturer> manufactures = new ArrayList(productInfo.getManufacturerSet());
+
             logger.debug("The productInfo: {}", productInfo);
+         // logger.debug("The list of manufactures: {}", manufactures);
+
             req.setAttribute("productInfo", productInfo);
+           // req.setAttribute("manufacturerSet", manufactures);
+
         } catch (Exception e ){
             page = "/error.jsp";
             logger.error("Error retrieving Product Info", e);

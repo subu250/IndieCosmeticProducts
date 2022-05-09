@@ -24,7 +24,6 @@ public class SearchUsers extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-     //   UserDao dao = new UserDao();
         GenericDao<User> dao = new GenericDao<>(User.class);
         if (req.getParameter("submit").equals("search")) {
             req.setAttribute("users", dao.getByPropertyEqual("lastName", req.getParameter("searchTerm")));

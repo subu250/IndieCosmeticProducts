@@ -1,19 +1,15 @@
 package edu.matc.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
+import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
-import lombok.Data;
+import javax.persistence.*;
 
 @Entity(name = "Manufacturer")
 @Table(name = "manufacturer")
 @Data
+
+
 public class Manufacturer {
 
     @Id
@@ -26,4 +22,29 @@ public class Manufacturer {
     @Column(name = "mfg_name")
     public String manufacturerName;
 
+
+//    @ManyToOne
+//    @JoinColumn(name = "id")
+//    private Product product;
+
+
+//
+//    public Product getProduct() {
+//        return product;
+//    }
+//
+//    public void setProduct(Product product) {
+//        this.product = product;
+//    }
+
+
+//    public Manufacturer() {
+//
+//    }
+//
+//    public Manufacturer(String brand, Product product) {
+//        this.brand = brand;
+//        this.product = product;
+//    }
 }
+

@@ -16,8 +16,8 @@
 <div class="breadcrumb-wrap">
     <div class="container-fluid">
         <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="about">About</a></li>
-            <li class="breadcrumb-item"><a href="#">Products</a></li>
+            <li class="breadcrumb-item"><a href="about.jsp">About</a></li>
+            <li class="breadcrumb-item"><a href="catalog.jsp">Catalog</a></li>
             <li class="breadcrumb-item active">Product Information</li>
         </ul>
     </div>
@@ -40,17 +40,40 @@
     </div>
 </div>
 </div>
-<div class="col-md-7">
-    <div class="product-content">
-        <div class="title"><h2>${product.brand}</h2></div>
-        <div class="ratting">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-        </div>
-    </div>
+    <h2>Product Information</h2>
+<script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('#productTable').DataTable();
+    } );
+
+</script>
+
+  <form action="searchProducts" class="form-inline">
+        <table id="productTable" class="display" cellspacing="0" width="100%">
+
+            <thead>
+            <th>Brand</th>
+            <th>Category</th>
+            <th>Price</th>
+
+            </thead>
+            <tbody>
+
+            <c:forEach var="product" items="${products}">
+                <tr>
+                    <td>${product.brand}</td>
+                    <td>${product.category}</td>
+                    <td>${product.price}</td>
+
+                    </c:forEach>
+            </tbody>
+        </table>
+
+      <class="row center"></class>
+      <button type="button" class="btn waves-effect waves-blue">Add Product</button>
+      </a>
+    </form>
+
 </div>
 
 

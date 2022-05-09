@@ -26,11 +26,11 @@ public class SearchProduct extends HttpServlet {
         GenericDao genericDao = new GenericDao(Product.class);
         String searchTerm = req.getParameter("searchTerm");
         if ((searchTerm != "") && (searchTerm != null)) {
-            req.setAttribute("products", genericDao.getAll());
+            req.setAttribute("products", genericDao.getByPropertyEqual("Brand",req.getParameter("searchTerm")));
         } else {
             req.setAttribute("products", genericDao.getAll());
         }
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/products.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/productInfo.jsp");
         dispatcher.forward(req, resp);
     }
 }

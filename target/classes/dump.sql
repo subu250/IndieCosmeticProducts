@@ -56,16 +56,16 @@ DROP TABLE IF EXISTS `product`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `product` (
-                          `id` int(11) NOT NULL AUTO_INCREMENT,
-                          `user` varchar(100) DEFAULT NULL,
-                          `category` varchar(100) DEFAULT NULL,
-                          `brand` varchar(100) DEFAULT NULL,
-                          `price` varchar(100) DEFAULT NULL,
-                          `user_id` int(11) NOT NULL,
-                          PRIMARY KEY (`id`),
-                          UNIQUE KEY `product_id_uindex` (`id`),
-                          KEY `product_user_id_fk` (`user_id`),
-                          CONSTRAINT `product_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
+                           `id` int(11) NOT NULL AUTO_INCREMENT,
+                           `mfg_name` varchar(100) DEFAULT NULL,
+                           `category` varchar(100) DEFAULT NULL,
+                           `brand` varchar(100) DEFAULT NULL,
+                           `price` varchar(100) DEFAULT NULL,
+                           `mfg_id` int(11) NOT NULL,
+                           PRIMARY KEY (`id`),
+                           UNIQUE KEY `product_id_uindex` (`id`),
+                           KEY `product_user_id_fk` (`mfg_id`),
+                           CONSTRAINT `product_user_id_fk` FOREIGN KEY (`mfg_id`) REFERENCES `manufacturer` (`mfg_id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

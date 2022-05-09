@@ -5,6 +5,7 @@
 <div class="card-panel">
     <div class="section center">
         <h1>Elegant Beauty Products</h1>
+
         <div class="divider"></div>
         <div class="row center">
             <p></p>
@@ -15,9 +16,9 @@
             </c:when>
     <c:otherwise>
         <h3>Welcome ${userName}</h3>
-                <form action="productInfo" class="" method="post">
+                <form action="searchProducts" class="form-inline">
                     <input type="hidden" class="" id="userName" name="userName" value="${userName}">
-                    <button type="submit" name="submit" class="btn waves-effect waves-blue darken-2">View Products
+                    <button type="submit" name="submit" class="btn waves-effect waves-blue darken-2">View Products Detail
                     </button>
     </c:otherwise>
 </c:choose>
