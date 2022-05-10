@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="about.jsp">About</a></li>
-            <li class="breadcrumb-item"><a href="catalog.jsp">Catalog</a></li>
+            <li class="breadcrumb-item"><a href="catalog">Catalog</a></li>
             <li class="breadcrumb-item active">Product Information</li>
         </ul>
     </div>
@@ -64,11 +64,17 @@
                     <td>${product.brand}</td>
                     <td>${product.category}</td>
                     <td>${product.price}</td>
+                    <c:forEach var="order" items="${user.orders}">
+                        ${order.id} ${order.description}<br/>
+                    </c:forEach>
 
                     </c:forEach>
             </tbody>
         </table>
-
+      <div class="product-price">
+          <h3>${product.price}</h3>
+          <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Add Product</a>
+      </div>
       <class="row center"></class>
       <button type="button" class="btn waves-effect waves-blue">Add Product</button>
       </a>

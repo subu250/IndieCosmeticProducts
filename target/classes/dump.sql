@@ -41,12 +41,12 @@ CREATE TABLE `user` (
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 
-INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (1,'Sam','Toyne','jscoyne','Userone@gmail.com0','user123');
-INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (2,'Fred','Hensen','fhensen','Userone@gmail.com0','user123');
-INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (3,'Rose','Roy','rroy','Userone@gmail.com0','user123');
-INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (4,'Tom','Klien','tklien','Userone@gmail.com0','user123');
-INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (5,'Karen','Mack','kmack','Userone@gmail.com0','user123');
-INSERT INTO user (user_id,first_name, last_name, user_name, email, password) VALUES (6,'Shean','Tillman','stillman','Userone@gmail.com0','user123');
+INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (1,'Sam','Toyne','jscoyne','Userone@gmail.com0','user123');
+INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (2,'Fred','Hensen','fhensen','Userone@gmail.com0','user123');
+INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (3,'Rose','Roy','rroy','Userone@gmail.com0','user123');
+INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (4,'Tom','Klien','tklien','Userone@gmail.com0','user123');
+INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (5,'Karen','Mack','kmack','Userone@gmail.com0','user123');
+INSERT INTO user (id,first_name, last_name, user_name, email, password) VALUES (6,'Shean','Tillman','stillman','Userone@gmail.com0','user123');
 
 
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
@@ -57,15 +57,14 @@ DROP TABLE IF EXISTS `product`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `product` (
                            `id` int(11) NOT NULL AUTO_INCREMENT,
-                           `mfg_name` varchar(100) DEFAULT NULL,
                            `category` varchar(100) DEFAULT NULL,
                            `brand` varchar(100) DEFAULT NULL,
                            `price` varchar(100) DEFAULT NULL,
-                           `mfg_id` int(11) NOT NULL,
+                           `user_id` int NOT NULL,
                            PRIMARY KEY (`id`),
                            UNIQUE KEY `product_id_uindex` (`id`),
-                           KEY `product_user_id_fk` (`mfg_id`),
-                           CONSTRAINT `product_user_id_fk` FOREIGN KEY (`mfg_id`) REFERENCES `manufacturer` (`mfg_id`) ON DELETE CASCADE ON UPDATE CASCADE
+                           KEY `product_user_id_fk` (`user_id`),
+                           CONSTRAINT `product_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -79,51 +78,54 @@ LOCK TABLES `product` WRITE;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
-INSERT INTO product (id,user,category,brand,price, user_id) VALUES (1,'Sam','Cream','Cerave','10.95',1);
-INSERT INTO product (id,user,category,brand,price, user_id) VALUES (2,'Fred','Cosmetic','Revlon','15.00',2);
-INSERT INTO product (id,user,category,brand,price, user_id) VALUES (3,'Rose','Cream','Cracked cream','3.00',3);
-INSERT INTO product (id,user,category,brand,price, user_id) VALUES (4,'Tom','Cream','Aveeno','11.00',1);
-INSERT INTO product (id,user,category,brand,price, user_id) VALUES (5,'Karen','Cosmetic','Eyeliner','7.00',4);
-INSERT INTO product (id,user,category,brand,price, user_id) VALUES (6,'Shean','Cream','Nivea','9.00',1);
+INSERT INTO product (id,user,category,brand,price) VALUES (1,'Sam','Cream','Cerave','10.95');
+INSERT INTO product (id,user,category,brand,price) VALUES (2,'Fred','Cosmetic','Revlon','15.00');
+INSERT INTO product (id,user,category,brand,price) VALUES (3,'Rose','Cream','Cracked cream','3.00');
+INSERT INTO product (id,user,category,brand,price) VALUES (4,'Tom','Cream','Aveeno','11.00',1);
+INSERT INTO product (id,user,category,brand,price) VALUES (5,'Karen','Cosmetic','Eyeliner','7.00');
+INSERT INTO product (id,user,category,brand,price) VALUES (6,'Shean','Cream','Nivea','9.00');
 
---
--- Table structure for table `product`
---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DROP TABLE IF EXISTS `order_products`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `item` (
-                        `id` int(11) NOT NULL AUTO_INCREMENT,
-                        `name` varchar(70) DEFAULT NULL,
-                        `description` varchar(70) DEFAULT NULL,
-                        `product` varchar(70) not null,
-                        `item_id` int(11) NOT NULL,
-                        PRIMARY KEY (`id`),
-                        UNIQUE KEY `item_id_uindex` (`id`)) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `order_products` (
+                                  `id` int NOT NULL AUTO_INCREMENT,
+                                  `quantity` int DEFAULT NULL,
+                                  `order_id` int NOT NULL,
+                                  `product_id` int NOT NULL,
+                                  PRIMARY KEY (`id`),
+                                  UNIQUE KEY `order_products_id_uindex` (`id`),
+                                  KEY `order_products_product_fk` (`product_id`),
+                                  KEY `order_products_order_fk` (`order_id`),
+                                  CONSTRAINT `order_products_order_fk` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE,
+                                  CONSTRAINT `order_products_product_fk` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
-
 --
--- Dumping data for table `product`
+-- Dumping data for table `order_products`
 --
 
-LOCK TABLES `item` WRITE;
-/*!40000 ALTER TABLE `product` DISABLE KEYS */;
-Insert into item (name, description, product, item_id) values ('Clinique', 'Gold','Eyeliner','12');
-/*!40000 ALTER TABLE `product` ENABLE KEYS */;
+LOCK TABLES `order_products` WRITE;
+/*!40000 ALTER TABLE `order_products` DISABLE KEYS */;
+INSERT INTO `order_products` VALUES (1,2,4,1),(2,1,4,2),(3,6,4,4),(4,1,5,1),(5,7,5,7);
+/*!40000 ALTER TABLE `order_products` ENABLE KEYS */;
 UNLOCK TABLES;

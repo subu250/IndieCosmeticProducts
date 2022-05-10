@@ -3,7 +3,8 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.Objects;
+import java.util.HashSet;
+import java.util.Set;
 
 
 /**
@@ -17,24 +18,14 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
-
+    private String category;
     private String price;
     private String brand;
 
-    @Column(name = "category")
-    private String category;
 
-//   // @ManyToOne
-//    @JoinColumn(name = "user_id", foreignKey = @ForeignKey(name = "user_id"))
-//    private User user
+    @OneToMany(mappedBy = "product",  fetch = FetchType.EAGER)
+    private Set<OrderProduct> orders = new HashSet<OrderProduct>();
 
-//    @ManyToOne
-//    @JoinColumn(name = "mfg_id", foreignKey = @ForeignKey(name = "mfg_id"))
-//    private Manufacturer manufacturer;
-
-
-//  @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-//  private Set<Manufacturer> manufacturerSet = new HashSet<>();
 
     /**
      * Instantiates a new Product.
@@ -51,7 +42,6 @@ public class Product {
      * @param brand    the brand
      */
     public Product(String price, String category, String brand) {
-        //this.manufacturer = manufacturer;
         this.category = category;
         this.price = price;
         this.brand = brand;
@@ -112,61 +102,13 @@ public class Product {
         return category;
     }
 
+    public int getId() {
+        return id;
+    }
 
-//    /**
-//     * Gets user.
-//     *
-//     * @return the user
-//     */
-//    public User getUser() {
-//        return user;
-//    }
-//
-//    /**
-//     * Sets user.
-//     *
-//     * @param user the user
-//     */
-//    public void setUser(User user) {
-//        this.user = user;
-//    }
-//
-//    /**
-//     * Gets manufacturer set.
-//     *
-//     * @return the manufacturer set
-//     */
-//    public Set<Manufacturer> getManufacturerSet() {
-//        return manufacturerSet;
-//    }
-//
-//    /**
-//     * Sets manufacturer set.
-//     *
-//     * @param manufacturerSet the manufacturer set
-//     */
-//    public void setManufacturerSet(Set<Manufacturer> manufacturerSet) {
-//        this.manufacturerSet = manufacturerSet;
-
-
-//    /**
-//     * Add manufacture.
-//     *
-//     * @param manufacturer the manufacture
-//     */
-//    public void addManufacturer(Manufacturer manufacturer) {
-//        manufacturerSet.add(manufacturer);
-//        manufacturer.(this);
-//    }
-//
-//    /**
-//     * Remove manufacture.
-//     * @param manufacturer the manufacture
-//     */
-//    public void removeManufacturerItem(Manufacturer manufacturer) {
-//        manufacturerSet.remove(manufacturer);
-//        manufacturer.setProduct(null);
-//    }
+    public void setId(int id) {
+        this.id = id;
+    }
 
 
     @Override
@@ -174,27 +116,18 @@ public class Product {
         return "Product{" +
                 "id=" + id +
                 ", brand='" + brand + '\'' +
-               // ", user=" + user +
                 ", category=" + category +
-            //  ", manufacturerSet=" + manufacturerSet +
                 '}';
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Product product = (Product) o;
-        return id == product.id && brand.equals(product.brand);
+    public Set<OrderProduct> getOrders() {
+        return orders;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, brand);
+    public void setOrders(Set<OrderProduct> orders) {
+        this.orders = orders;
     }
-
 }
-
 
 
 

@@ -5,7 +5,6 @@ edu/matc/controller/SearchProduct.class
 edu/matc/entity/Manufacturer.class
 edu/matc/controller/Auth.class
 edu/matc/controller/SearchUsers.class
-edu/matc/entity/WholeSale.class
 edu/matc/persistence/GenericDao.class
 edu/matc/persistence/external/ProductApiDao.class
 edu/matc/entity/User.class
@@ -20,6 +19,7 @@ product/api/ProductApiItem.class
 edu/matc/controller/Manufacture.class
 product/api/ProductResponse.class
 edu/matc/entity/external/ProductColor.class
+edu/matc/entity/OrderProduct.class
 edu/matc/controller/SignIn.class
 edu/matc/util/DaoFactory.class
 edu/matc/entity/external/Product.class
