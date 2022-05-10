@@ -39,6 +39,7 @@ public class ProductApiDao {
         WebTarget target = getWebTarget(searchCriteria);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
         Product[] products = null;
+
         ObjectMapper mapper = new ObjectMapper();
 
         try {
@@ -52,13 +53,14 @@ public class ProductApiDao {
     private WebTarget getWebTarget(Map<String, String[]> queryParams) {
         WebTarget webTarget = client
                 .target(BASE_URL);
-        if(queryParams != null) {
-            for(Map.Entry<String, String[]> queryParameter: queryParams.entrySet()) {
+        if (queryParams != null) {
+            for (Map.Entry<String, String[]> queryParameter : queryParams.entrySet()) {
                 logger.debug("Filtered products on {} with {}.", queryParameter.getKey(), String.join(",", queryParameter.getValue()));
-                webTarget = webTarget.queryParam(queryParameter.getKey(), (Object[])queryParameter.getValue());
+                webTarget = webTarget.queryParam(queryParameter.getKey(), (Object[]) queryParameter.getValue());
             }
 
         }
         return webTarget;
     }
+
 }

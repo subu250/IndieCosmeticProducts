@@ -27,7 +27,7 @@
     <table id="catalogTable" class="display" cellspacing="0"
            width="100%">
         <thead>
-        <th>Catalog_Id</th>
+        <th>Id</th>
         <th>Brand</th>
         <th>Category</th>
         <th>Name</th>

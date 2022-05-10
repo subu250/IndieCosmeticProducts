@@ -55,6 +55,7 @@
             <th>Brand</th>
             <th>Category</th>
             <th>Price</th>
+            <th>Actions</th>
 
             </thead>
             <tbody>
@@ -64,19 +65,18 @@
                     <td>${product.brand}</td>
                     <td>${product.category}</td>
                     <td>${product.price}</td>
+                    <td><a href="edit?id=<c:out value='${product.id}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="delete?id=<c:out value='${product.id}' />">Delete</a></td>
+
+                </tr>
+                    <td>
                     <c:forEach var="order" items="${user.orders}">
                         ${order.id} ${order.description}<br/>
                     </c:forEach>
-
+                        </td>
                     </c:forEach>
             </tbody>
         </table>
-      <div class="product-price">
-          <h3>${product.price}</h3>
-          <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Add Product</a>
-      </div>
-      <class="row center"></class>
-      <button type="button" class="btn waves-effect waves-blue">Add Product</button>
+
       </a>
     </form>
 

@@ -131,7 +131,6 @@ public class Order {
      * @param product the product to be removed from the order
      */
     public void removeProduct(Product product) {
-        // to safely remove from a list we iterating over, use iterator rather than foreach
         for (Iterator<OrderProduct> iterator = products.iterator();
              iterator.hasNext(); ) {
             OrderProduct orderProduct = iterator.next();
