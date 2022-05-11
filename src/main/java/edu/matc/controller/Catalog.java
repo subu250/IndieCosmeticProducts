@@ -30,4 +30,6 @@ public class Catalog extends HttpServlet {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/catalog.jsp");
         dispatcher.forward(req, resp);
     }
+
+
 }

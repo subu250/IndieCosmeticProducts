@@ -7,6 +7,7 @@ import edu.matc.persistence.GenericDao;
 import edu.matc.persistence.external.ProductApiDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -34,16 +35,17 @@ public class AddProduct extends HttpServlet {
         String brand = req.getParameter("productBrand");
         String category = req.getParameter("productCategory");
         try {
-           // setCatalogFields(product,brand, category);
+            setCatalogFields(product, brand, category, req, resp, page);
+
         } catch (Exception e) {
             logger.error("Unable to add", e);
         } finally {
-            forwardDispatcher(req, resp,page);
+            forwardDispatcher(req, resp, page);
         }
     }
 
-    private void setCatalogFields(Product product, String brand, String category,HttpServletRequest req,
-                                  HttpServletResponse resp) throws ServletException, IOException {
+    private void setCatalogFields(Product product, String brand, String category, HttpServletRequest req,
+                                  HttpServletResponse resp, String page) throws ServletException, IOException {
         ProductResponse[] productItems;
         try {
             productItems = getCatalogResponse(brand, category);
@@ -55,13 +57,13 @@ public class AddProduct extends HttpServlet {
             req.setAttribute("product", product);
             logger.error("product: {} {}", product);
             logger.error("exception: {}", e);
-            String page = "/addProduct.page";
-            forwardDispatcher(req, resp,page);
+            page = "/addProduct.jsp";
+            forwardDispatcher(req, resp, page);
         }
 
     }
 
-    private void forwardDispatcher(HttpServletRequest req, HttpServletResponse resp,String page) throws ServletException, IOException {
+    private void forwardDispatcher(HttpServletRequest req, HttpServletResponse resp, String page) throws ServletException, IOException {
         RequestDispatcher dispatcher = req.getRequestDispatcher(page);
         dispatcher.forward(req, resp);
     }

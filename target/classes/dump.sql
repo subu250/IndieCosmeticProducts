@@ -78,12 +78,12 @@ LOCK TABLES `product` WRITE;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
-INSERT INTO product (id,user,category,brand,price) VALUES (1,'Sam','Cream','Cerave','10.95');
-INSERT INTO product (id,user,category,brand,price) VALUES (2,'Fred','Cosmetic','Revlon','15.00');
-INSERT INTO product (id,user,category,brand,price) VALUES (3,'Rose','Cream','Cracked cream','3.00');
-INSERT INTO product (id,user,category,brand,price) VALUES (4,'Tom','Cream','Aveeno','11.00',1);
-INSERT INTO product (id,user,category,brand,price) VALUES (5,'Karen','Cosmetic','Eyeliner','7.00');
-INSERT INTO product (id,user,category,brand,price) VALUES (6,'Shean','Cream','Nivea','9.00');
+INSERT INTO product (id,category,brand,price) VALUES (1,'Cream','Cerave','10.95');
+INSERT INTO product (id,category,brand,price) VALUES (2,'Cosmetic','Revlon','15.00');
+INSERT INTO product (id,category,brand,price) VALUES (3,'Cream','Cracked cream','3.00');
+INSERT INTO product (id,category,brand,price) VALUES (4,'Cream','Aveeno','11.00',1);
+INSERT INTO product (id,category,brand,price) VALUES (5,'Cosmetic','Eyeliner','7.00');
+INSERT INTO product (id,category,brand,price) VALUES (6,'Cream','Nivea','9.00');
 
 
 

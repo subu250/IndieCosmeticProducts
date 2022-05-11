@@ -21,7 +21,7 @@
             <label class="control-label col-sm-2" for="brand">Brand</label>
             <div class="col-sm-4">
                 <input type="text" class="form-control" id="brand"
-                       name="firstName"
+                       name="brand"
                        value = "${product.brand}"
                        data-error="Please enter the product's name." required>
             </div>

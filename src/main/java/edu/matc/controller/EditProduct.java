@@ -49,7 +49,7 @@ public class EditProduct extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao productDao = new GenericDao(Product.class);
 
-//        req.setAttribute("product", productDao.getById(req.getParameter("id")));
+       // req.setAttribute("product", productDao.getByPropertyEqual(("Brand")));
         RequestDispatcher dispatcher = req.getRequestDispatcher("/edit.jsp");
         dispatcher.forward(req, resp);
     }

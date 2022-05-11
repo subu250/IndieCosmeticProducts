@@ -18,9 +18,12 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
-    private String category;
-    private String price;
-    private String brand;
+    @Column(name = "brand")
+    public String brand;
+    @Column(name = "category")
+    public String category;
+    @Column(name = "price")
+    public String price;
 
 
     @OneToMany(mappedBy = "product",  fetch = FetchType.EAGER)
@@ -53,6 +56,7 @@ public class Product {
 
     public Product(Integer id, String brand, String category) {
     }
+
 
 
     /**
