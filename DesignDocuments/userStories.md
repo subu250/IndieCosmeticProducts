@@ -24,14 +24,9 @@ Signed - in user, User can view products. *
 
 Signed - in user, User can delete products. *
 
-### Search for Locations
+### Search for Catalog
 
-Signed-in user can can search for a Locations. *
-
-### Edit and Delete Locations
-
-User can update and delete a location to search for the products.
-
+Signed-in user can can search for a Product Catalog. *
 
 *Denotes Minimum Viable Product (MVP)
 

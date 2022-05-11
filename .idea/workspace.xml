@@ -16,32 +16,8 @@
   <component name="ChangeListManager">
     <list default="true" id="da4a2b1e-6e4f-43c1-a36d-0e4095c3c25a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocuments/ProjectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocuments/ProjectPlan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TimeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/TimeLog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/AddProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/EditProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/EditProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Manufacturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Manufacturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/external/ProductApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/external/ProductApiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/product/api/ProductResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/AddProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/AddProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/EditProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/EditProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/persistence/external/ProductApiDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/persistence/external/ProductApiDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/product/api/ProductResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/AddProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/AddProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/EditProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/EditProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/external/ProductApiDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/persistence/external/ProductApiDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/product/api/ProductResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.ProductApiDaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.persistence.ProductApiDaoTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.ProductApiDaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.persistence.ProductApiDaoTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocuments/screens.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocuments/screens.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocuments/userStories.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocuments/userStories.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -355,7 +331,7 @@
       <workItem from="1651693449103" duration="10129000" />
       <workItem from="1651738135497" duration="3117000" />
       <workItem from="1651773551767" duration="95539000" />
-      <workItem from="1652189797838" duration="36611000" />
+      <workItem from="1652189797838" duration="37629000" />
     </task>
     <servers />
   </component>
