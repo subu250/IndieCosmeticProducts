@@ -7,6 +7,7 @@
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/SignIn.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/entity/User.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/entity/external/ProductColor.java
+/Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/EditProduct.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/auth/CognitoJWTParser.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/SearchUsers.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/product/api/ProductColorsItem.java
@@ -22,6 +23,7 @@
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/product/api/ProductApi.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/ProductInfo.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/ViewOrders.java
+/Users/subu/projects/IndieCosmeticProducts/src/main/java/Service/ProductService.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/entity/Product.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/persistence/GenericDao.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/util/DaoFactory.java
@@ -29,4 +31,5 @@
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/util/PropertiesLoader.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/entity/Manufacturer.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/Auth.java
+/Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/DeleteProduct.java
 /Users/subu/projects/IndieCosmeticProducts/src/main/java/edu/matc/controller/LogIn.java

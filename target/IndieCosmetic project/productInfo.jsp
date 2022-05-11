@@ -52,20 +52,22 @@
         <table id="productTable" class="display" cellspacing="0" width="100%">
 
             <thead>
+            <th>Id</th>
             <th>Brand</th>
             <th>Category</th>
             <th>Price</th>
             <th>Actions</th>
-            
+
             </thead>
             <tbody>
 
             <c:forEach var="product" items="${products}">
                 <tr>
+                    <td>${product.id}</td>
                     <td>${product.brand}</td>
                     <td>${product.category}</td>
                     <td>${product.price}</td>
-                    <td><a href="edit?id=<c:out value='${product.id}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="delete?id=<c:out value='${product.id}' />">Delete</a></td>
+                    <td><a href="editProduct?id=<c:out value='${product.id}' />">Edit</a> <a href="deleteProduct?id=<c:out value='${product.id}' />">Delete</a></td>
 
                 </tr>
                     <td>

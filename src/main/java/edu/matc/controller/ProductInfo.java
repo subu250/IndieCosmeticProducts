@@ -27,21 +27,22 @@ public class ProductInfo extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        GenericDao productDao = new GenericDao(Product.class);
 
         GenericDao genericDao = new GenericDao(Product.class);
         int id = (Integer.parseInt(req.getParameter("id")));
         String page = "/productInfo.jsp";
         try {
             Product productInfo = (Product) genericDao.getById(id);
-          // List<Manufacturer> manufactures = new ArrayList(productInfo.getManufacturerSet());
+            // List<Manufacturer> manufactures = new ArrayList(productInfo.getManufacturerSet());
 
             logger.debug("The productInfo: {}", productInfo);
-         // logger.debug("The list of manufactures: {}", manufactures);
+            // logger.debug("The list of manufactures: {}", manufactures);
 
             req.setAttribute("productInfo", productInfo);
-           // req.setAttribute("manufacturerSet", manufactures);
+            // req.setAttribute("manufacturerSet", manufactures);
 
-        } catch (Exception e ){
+        } catch (Exception e) {
             page = "/error.jsp";
             logger.error("Error retrieving Product Info", e);
         } finally {
@@ -49,6 +50,9 @@ public class ProductInfo extends HttpServlet {
             dispatcher.forward(req, resp);
         }
     }
-
 }
+
+
+
+
 

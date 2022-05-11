@@ -18,6 +18,10 @@
     $(document).ready(function() {
         $('#lightgallery').lightingColor();
     });
+
+    function addToCard(id) {
+        window.location = '/editProduct?productId=' + id;
+    }
 </script>
 
 </head>
@@ -27,7 +31,6 @@
     <table id="catalogTable" class="display" cellspacing="0"
            width="100%">
         <thead>
-        <th>Id</th>
         <th>Brand</th>
         <th>Category</th>
         <th>Name</th>
@@ -43,7 +46,9 @@
                 <td>${product.name}</td>
                 <td><img src=${product.imageLink} alt=${product.description} width="128" height="128"></td>
                 <td><fmt:formatNumber value = "${product.price}" type = "currency"/></td>
-                <td><button class="btn btn-primary">Add to card</button></td>
+                <td><button onClick="addToCard('${product.id}')" class="btn btn-primary">Add to card</button></td>
+                <td><a href="editProduct?id=<c:out value='${product.brand}' />">Edit</a> &nbsp;&nbsp;</td>
+
             </tr>
         </c:forEach>
         </tbody>

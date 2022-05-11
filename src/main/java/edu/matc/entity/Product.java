@@ -48,6 +48,13 @@ public class Product {
 
     }
 
+    public Product(String brand, String category) {
+    }
+
+    public Product(Integer id, String brand, String category) {
+    }
+
+
     /**
      * Sets price of product
      *

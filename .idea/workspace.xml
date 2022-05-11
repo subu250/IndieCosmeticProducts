@@ -15,26 +15,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da4a2b1e-6e4f-43c1-a36d-0e4095c3c25a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6982c41e-d49f-4b45-b0f6-98eb71697aca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6982c41e-d49f-4b45-b0f6-98eb71697aca.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6982c41e-d49f-4b45-b0f6-98eb71697aca/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6982c41e-d49f-4b45-b0f6-98eb71697aca/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ViewOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ViewOrders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/ProductInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/SearchProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/OrderProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/OrderProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/external/ProductApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/external/ProductApiDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/catalog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/catalog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/productInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/productInfo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ViewOrders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ViewOrders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/persistence/external/ProductApiDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/persistence/external/ProductApiDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/controller/ProductInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/OrderProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/OrderProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/WEB-INF/classes/edu/matc/entity/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/catalog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/catalog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/IndieCosmetic project/productInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/IndieCosmetic project/productInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/ViewOrders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/ViewOrders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/external/ProductApiDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/persistence/external/ProductApiDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/ProductInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/OrderProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/OrderProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -353,7 +352,7 @@
       <workItem from="1651693449103" duration="10129000" />
       <workItem from="1651738135497" duration="3117000" />
       <workItem from="1651773551767" duration="95539000" />
-      <workItem from="1652189797838" duration="7340000" />
+      <workItem from="1652189797838" duration="27747000" />
     </task>
     <servers />
   </component>

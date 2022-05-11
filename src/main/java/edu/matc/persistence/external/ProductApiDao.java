@@ -63,4 +63,5 @@ public class ProductApiDao {
         return webTarget;
     }
 
+
 }

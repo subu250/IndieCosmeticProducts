@@ -58,7 +58,6 @@ public class OrderProduct implements Serializable {
         this.quantity = quantity;
     }
 
-
     /**
      * Gets id.
      *

@@ -33,4 +33,6 @@ public class SearchProduct extends HttpServlet {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/productInfo.jsp");
         dispatcher.forward(req, resp);
     }
+
+
 }
