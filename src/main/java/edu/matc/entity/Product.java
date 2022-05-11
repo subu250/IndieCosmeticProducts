@@ -82,7 +82,7 @@ public class Product {
      *
      * @param brand the brand
      */
-    public void setDescription(String brand) {
+    public void setBrand(String brand) {
         this.brand = brand;
     }
 

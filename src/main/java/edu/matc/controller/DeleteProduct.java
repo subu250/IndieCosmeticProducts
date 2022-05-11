@@ -26,9 +26,10 @@ public class DeleteProduct extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao productDao = new GenericDao(Product.class);
-        productDao.delete(Integer.valueOf(req.getParameter("brand")));
-
-    RequestDispatcher dispatcher = req.getRequestDispatcher("searchUser?searchTerm=&submit=viewAll");
+        Product product = new Product();
+        product.setId(Integer.valueOf(req.getParameter("id")));
+        productDao.delete(product);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("searchProducts?searchTerm=&submit=viewAll");
         dispatcher.forward(req, resp);
     }
 

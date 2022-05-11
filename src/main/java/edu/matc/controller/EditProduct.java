@@ -30,16 +30,12 @@ public class EditProduct extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao productDao = new GenericDao(Product.class);
+        Product product = new Product();
+        product.setBrand(req.getParameter("brand"));
+        product.setCategory(req.getParameter("category"));
+        productDao.saveOrUpdate(product);
 
-        if (req.getParameter("id").equals("")) {
-            Product product = new Product(req.getParameter("brand"), req.getParameter("category"));
-            productDao.insert(product);
-        } else {
-            Product product = new Product(Integer.valueOf(req.getParameter("id")), req.getParameter("brand"), req.getParameter("category"));
-
-            productDao.saveOrUpdate(product);
-        }
-        RequestDispatcher dispatcher = req.getRequestDispatcher("searchUser?searchTerm=&submit=viewAll");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("searchProducts?searchTerm=&submit=viewAll");
         dispatcher.forward(req, resp);
 
     }
@@ -48,8 +44,11 @@ public class EditProduct extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao productDao = new GenericDao(Product.class);
+        Product product = new Product();
+        req.setAttribute("product", productDao.getById(Integer.valueOf(req.getParameter("id"))));
+       // product.setBrand(req.getParameter("brand"));
 
-       // req.setAttribute("product", productDao.getByPropertyEqual(("Brand")));
+        // req.setAttribute("product", productDao.getByPropertyEqual("brand", "revlon"));
         RequestDispatcher dispatcher = req.getRequestDispatcher("/edit.jsp");
         dispatcher.forward(req, resp);
     }
