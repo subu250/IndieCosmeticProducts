@@ -54,49 +54,47 @@
 ## Week 9
 
 - [x] Ready to complete for Checkpoint 3
-- [] Work on to build RESTful services.
+- [X] Work on to build RESTful services.
 - [x] Deployed database to AWS
 
 ## Week 10
 
-- [] Add SignIn story
-- [] Add Signup story
-- [] Add JUnit tests for API
+- [] Add LogIn story
+- [X] Add JUnit tests for API
 
 ## Week 11
 
-- [] Update Products Table
-- [] Add JSP to add location
-- [] Work on product info jsp
-- [] Work on to add location using APIs
+- [x] Update Products Table
+- [X] Work on product info jsp
+- [X] Work on to add catalog using APIs
 
 ## Week 12
 
-- []  Team Project Work week
-- []   Continue working on the project
+- [X]  Team Project Work week
+- [X]   Continue working on the project
 
 
 ## Week 13
 
-- [] Work on logging error scenarios.
-- [] Work to prepare for code review
-- [] Continue work on the project.
+- [X] Work on logging error scenarios.
+- [X] Work to prepare for code review
+- [X] Continue work on the project.
 
 
 ## Week 14
 
-- [] Review the project
-- [] Add or update the requirements as needed.
-- [] Start working on presentation.
-- [] Ready for code review.
+- [X] Review the project
+- [X] Add or update the requirements as needed.
+- [X] Start working on presentation.
+- [X] Ready for code review.
 
 
 ## Week 15
 
-- [] Continue working on project after the feedback
-- [] Work on presentation slides
-- [] Update the code as per peer review
+- [X] Continue working on project after the feedback
+- [X] Work on presentation slides
+- [X] Update the code as per peer review
 
 ## Week 16
-- [] Final Project Submission
+- [X] Final Project Submission
 

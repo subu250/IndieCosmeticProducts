@@ -23,28 +23,5 @@ public class Manufacturer {
     public String manufacturerName;
 
 
-//    @ManyToOne
-//    @JoinColumn(name = "id")
-//    private Product product;
-
-
-//
-//    public Product getProduct() {
-//        return product;
-//    }
-//
-//    public void setProduct(Product product) {
-//        this.product = product;
-//    }
-
-
-//    public Manufacturer() {
-//
-//    }
-//
-//    public Manufacturer(String brand, Product product) {
-//        this.brand = brand;
-//        this.product = product;
-//    }
 }
 

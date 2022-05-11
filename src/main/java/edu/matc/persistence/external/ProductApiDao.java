@@ -1,7 +1,9 @@
 package edu.matc.persistence.external;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.entity.external.Product;
+import edu.matc.entity.external.ProductResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -63,5 +65,33 @@ public class ProductApiDao {
         return webTarget;
     }
 
+    /**
+     * Get brand response from catalog [ ].
+     *
+     * @param brand  the brand
+     * @param category the category
+     * @return the product response
+     */
 
+    public ProductResponse[] getCatalogResponse(String brand, String category) {
+
+
+        Client client = ClientBuilder.newClient();
+
+        String url = "https://makeup-api.herokuapp.com/api/v1/products.json";
+        WebTarget target = client.target(url);
+        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
+        ProductResponse[] productResponse = null;
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            productResponse = mapper.readValue(response, ProductResponse[].class);
+
+        } catch (JsonProcessingException e) {
+            logger.error("JsonProcessingException" + e);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return productResponse;
+    }
 }
+

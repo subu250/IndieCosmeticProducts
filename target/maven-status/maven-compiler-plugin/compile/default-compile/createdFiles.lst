@@ -9,6 +9,7 @@ edu/matc/controller/EditProduct.class
 edu/matc/persistence/GenericDao.class
 edu/matc/persistence/external/ProductApiDao.class
 edu/matc/entity/User.class
+edu/matc/entity/external/ProductResponse.class
 product/api/ProductColorsItem.class
 edu/matc/controller/LogIn.class
 edu/matc/auth/Keys.class
@@ -19,7 +20,6 @@ edu/matc/entity/Order.class
 edu/matc/controller/AddProduct.class
 product/api/ProductApiItem.class
 edu/matc/controller/Manufacture.class
-product/api/ProductResponse.class
 edu/matc/entity/external/ProductColor.class
 edu/matc/entity/OrderProduct.class
 edu/matc/controller/SignIn.class

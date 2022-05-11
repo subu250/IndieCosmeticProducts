@@ -34,13 +34,10 @@ public class ProductInfo extends HttpServlet {
         String page = "/productInfo.jsp";
         try {
             Product productInfo = (Product) genericDao.getById(id);
-            // List<Manufacturer> manufactures = new ArrayList(productInfo.getManufacturerSet());
 
             logger.debug("The productInfo: {}", productInfo);
-            // logger.debug("The list of manufactures: {}", manufactures);
 
             req.setAttribute("productInfo", productInfo);
-            // req.setAttribute("manufacturerSet", manufactures);
 
         } catch (Exception e) {
             page = "/error.jsp";
