@@ -39,10 +39,10 @@
 4.Dao deleted product from  the database
 5.Servlet sends confirmation to product page that product has been removed.
 
-### Search for Locations
+### Search for Catalog
 
 1.Users logged into the app
-2.Search the product into certain locations.
+2.Search product catalog.
 
 
 
