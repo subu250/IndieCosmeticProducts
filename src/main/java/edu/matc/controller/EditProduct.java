@@ -31,6 +31,7 @@ public class EditProduct extends HttpServlet {
 
         GenericDao productDao = new GenericDao(Product.class);
         Product product = new Product();
+        product.setId(Integer.valueOf(req.getParameter("id")));
         product.setBrand(req.getParameter("brand"));
         product.setCategory(req.getParameter("category"));
         productDao.saveOrUpdate(product);
