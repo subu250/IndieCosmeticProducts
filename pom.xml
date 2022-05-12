@@ -216,6 +216,21 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven-compiler-plugin-version}</version>
         </plugin>
+
+        <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <configuration>
+            <webResources>
+              <resource>
+                <directory>src/main/.platform</directory>
+                <targetPath>.platform</targetPath>
+                <filtering>true</filtering>
+              </resource>
+            </webResources>
+          </configuration>
+        </plugin>
+
+
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${maven-surefire-plugin-version}</version>
@@ -274,6 +289,8 @@
               <version>2.11.0</version>
             </dependency>
           </dependencies>
+
+
         </plugin>
       </plugins>
     </pluginManagement>

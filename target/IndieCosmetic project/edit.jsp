@@ -43,7 +43,7 @@
                 data-disable="true">Add
         </button>
         <button type="reset" class="btn btn-default">Clear</button>
-        <a href ="searchUser?searchTerm=&submit=viewAll"><button type="button" class="btn btn-default">Cancel</button></a>
+        <a href ="searchProducts?searchTerm=&submit=viewAll"><button type="button" class="btn btn-default">Cancel</button></a>
     </form>
 </div>
 </body>

@@ -19,8 +19,39 @@
         $('#lightgallery').lightingColor();
     });
 
-    function addToCard(id) {
-        window.location = '/editProduct?productId=' + id;
+    addToCare = (id) => {
+        post('/editProduct/', {"ProductId": id});
+        alert(id);
+    }
+
+    /**
+     * sends a request to the specified url from a form. this will change the window location.
+     * @param {string} path the path to send the post request to
+     * @param {object} params the parameters to add to the url
+     * @param {string} [method=post] the method to use on the form
+     */
+
+    function post(path, params, method='post') {
+
+
+        // It can be made less verbose if you use one.
+        const form = document.createElement('form');
+        form.method = method;
+        form.action = path;
+
+        for (const key in params) {
+            if (params.hasOwnProperty(key)) {
+                const hiddenField = document.createElement('input');
+                hiddenField.type = 'hidden';
+                hiddenField.name = key;
+                hiddenField.value = params[key];
+
+                form.appendChild(hiddenField);
+            }
+        }
+
+        document.body.appendChild(form);
+        form.submit();
     }
 </script>
 
@@ -31,24 +62,23 @@
     <table id="catalogTable" class="display" cellspacing="0"
            width="100%">
         <thead>
+        <th>Id</th>
         <th>Brand</th>
         <th>Category</th>
         <th>Name</th>
         <th>Image</th>
         <th>Price</th>
-        <th></th>
         </thead>
         <tbody>
         <c:forEach var="product" items="${products}">
             <tr>
+                <td>${product.id}</td>
                 <td>${fn:toUpperCase(product.brand)}</td>
                 <td>${product.productType}</td>
                 <td>${product.name}</td>
                 <td><img src=${product.imageLink} alt=${product.description} width="128" height="128"></td>
                 <td><fmt:formatNumber value = "${product.price}" type = "currency"/></td>
-                <td><button onClick="addToCard('${product.id}')" class="btn btn-primary">Add to card</button></td>
-                <td><a href="editProduct?id=<c:out value='${product.brand}' />">Edit</a> &nbsp;&nbsp;</td>
-
+                <td><button onClick="addToCart(${product.id})" class="btn btn_primary" />
             </tr>
         </c:forEach>
         </tbody>
